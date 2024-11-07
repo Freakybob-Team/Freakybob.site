@@ -2,7 +2,7 @@ let currentName = null;
 
 function showInfo(name) {
     const descriptions = {
-        'Squirrel': 'Squirrel bought the domain and does most of all the coding! Silly boykisser :3',
+        'Squirrel': 'Squirrel bought the domain and does most of all the coding! Ho ho ho, Merry Christmas 🔥🔥🔥',
         'Wish': 'Wish is a main developer for the website and made it so the music gallery can live on!',
         'Hater': '#2 Twitter Hater helped with giving all sorts of spongebob images!',
         'mpax': 'Mpax helps with the 3DS and IE6 versions! He also makes little tweaks to improve the site.',
