@@ -63,7 +63,7 @@ h2 {
     height: 250px;
     width: 300px;
 }
-#Sspruce {
+#Sspruce, #Tina {
     margin-top: 30px;
     height: 40px;
     width: 100px;
@@ -75,7 +75,7 @@ h2 {
     transition: color 0.3s, background-color 0.3s;
     
 }
-#Sspruce:hover {
+#Sspruce:hover, #Tina:hover {
     color: #1d896c;
     background-color: rgb(104, 238, 15);
     text-decoration: underline;
