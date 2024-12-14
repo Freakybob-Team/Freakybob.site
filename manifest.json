@@ -1,0 +1,17 @@
+{
+    "lang": "en-us",
+    "name": "Freakybob",
+    "short_name": "Freakybob",
+    "description": "Freakybob",
+    "start_url": "/",
+    "background_color": "#2f3d58",
+    "theme_color": "#2f3d58",
+    "orientation": "any",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/freaky.webp",
+            "sizes": "512x512"
+        }
+    ]
+}
