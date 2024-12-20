@@ -1,10 +1,26 @@
-* {
-    background: url('https://raw.githubusercontent.com/Nomaakip/swag.freakybob.site/refs/heads/main/images/rainy-sunset-city-stockcake.webp');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: cover;
+body {
+    margin: 0;
+    padding: 0;
+    
 }
-.container {
+
+
+#particles-js{
+position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: rgb(33,0,65);
+    background: -moz-radial-gradient(circle, rgba(33,0,65,1) 0%, rgba(77,14,166,1) 53%, rgba(115,0,167,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(33,0,65,1) 0%, rgba(77,14,166,1) 53%, rgba(115,0,167,1) 100%);
+    background: radial-gradient(circle, rgba(33,0,65,1) 0%, rgba(77,14,166,1) 53%, rgba(115,0,167,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#210041",endColorstr="#7300a7",GradientType=1);
+  }
+
+  
+.container{
     height:95vh;
     width: 95vm;
     background: none;
