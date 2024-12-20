@@ -2,7 +2,7 @@ let currentName = null;
 
 function showInfo(name) {
     const descriptions = {
-        'Squirrel': 'Squirrel bought the domain and does most of all the coding! Ho ho ho, Merry Christmas 🔥🔥🔥',
+        'Squirrel': '5quirre1 was the one to buy the actual domain. He spends his day working on random ah freaky projects :3',
         'Wish': 'Wish is a main developer for the website and made it so the music gallery can live on!',
         'Hater': '#2 Twitter Hater helped with giving all sorts of spongebob images!',
         'mpax': 'Mpax helps with the 3DS and IE6 versions! He also makes little tweaks to improve the site.',
@@ -10,12 +10,12 @@ function showInfo(name) {
         'Nomaakip': 'Nomaakip helps fix the site and helped designing the lb website!',
     };
     const images = {
-        'Squirrel': 'https://static.wikia.nocookie.net/christmas-wiki/images/2/21/How-old-is-santa-6500cdaec0818.jpg/revision/latest?cb=20240708135338',
-        'Wish': 'images/pfps/wish.png',
+        'Squirrel': 'https://github.com/5quirre1.png',
+        'Wish': 'https://github.com/wish13yt.png',
         'Hater': 'images/pfps/twitterhater.webp',
-        'mpax': 'images/pfps/Mpax.png',
-        'names': 'images/pfps/names.png',
-        'Nomaakip': 'images/pfps/nomaakip2.png',
+        'mpax': 'https://github.com/mpax235.png',
+        'names': 'https://github.com/nameswastaken.png',
+        'Nomaakip': 'https://github.com/nomaakip.png',
     };
 
     const descriptionDiv = document.getElementById('description');
