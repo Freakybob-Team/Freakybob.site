@@ -47,11 +47,13 @@ padding: 20px 0px 20px 10px;
 border-radius: 30px;
 margin-top: 20px;
 margin-left: 5px;
-background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
-border: 1px solid ;
-border-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(27,255,206,1) 100%);
+background: rgb(205,125,255);
+background: -moz-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
+background: linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cd7dff",endColorstr="#3d0087",GradientType=1);
 backdrop-filter: blur(10px);
-box-shadow: 0 2px 20px 0 rgba(0,0,0,37);
+box-shadow: 0 2px 20px 0 rgba(158,0,255,1);
 background-size: 300%;
 background-position: left;
 text-align: center;
@@ -59,9 +61,8 @@ font-family: Helvetica;
 font-size: 22px;
 color: mintcream;
 text-decoration: none;
-transition: background-position 2s ease-in-out;
-transition: all 2s ease-out;
-animation: pop-in 0.6s ease-out forwards;
+transition: background-position 1s ease-in-out;
+transition: all 1s ease-out;
 position: absolute;
 }
 
@@ -72,11 +73,13 @@ width: 300px;
 padding: 20px 0px 20px 10px;
 border-radius: 30px;
 margin-left: 5px;
-background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
-border: 1px solid ;
-border-image: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(27,255,206,1) 100%);
+background: rgb(205,125,255);
+background: -moz-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
+background: linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cd7dff",endColorstr="#3d0087",GradientType=1);
 backdrop-filter: blur(10px);
-box-shadow: 0 2px 20px 0 rgba(0,0,0,37);
+box-shadow: 0 2px 20px 0 rgba(158,0,255,1);
 background-size: 300%;
 background-position: left;
 text-align: center;
@@ -84,18 +87,19 @@ font-family: Helvetica;
 font-size: 22px;
 color: mintcream;
 text-decoration: none;
-transition: background-position 2s ease-in-out;
-transition: all 2s ease-out;
-animation: pop-in 0.6s ease-out forwards;
+transition: background-position 1s ease-in-out;
+transition: all 1s ease-in-out;
 position: absolute;
 }
 
 .play:hover {
     background-position: right;
+    box-shadow: 0px 2px 20px 0 rgba(61,0,135,1);
 }
 
 .play2:hover {
     background-position: right;
+    box-shadow: 0px 2px 20px 0 rgba(61,0,135,1);
 }
 
 .swag {
@@ -171,6 +175,7 @@ position: absolute;
 @keyframes pop-in {
     0% {
       opacity: 0;
+      transform: translateY(-4rem) scale(1);
     }
     100% {
       opacity: 1;
