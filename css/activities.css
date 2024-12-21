@@ -63,6 +63,7 @@ color: mintcream;
 text-decoration: none;
 transition: background-position 1s ease-in-out;
 transition: all 1s ease-out;
+animation: pop-in 0.6s ease-in-out forwards;
 position: absolute;
 }
 
@@ -89,6 +90,7 @@ color: mintcream;
 text-decoration: none;
 transition: background-position 1s ease-in-out;
 transition: all 1s ease-in-out;
+animation: pop-in 0.6s ease-out forwards;
 position: absolute;
 }
 
