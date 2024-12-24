@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freakybob Clicker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e4d501;
+            color: #bdca02;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            width: 80%;
+            max-width: 1200px;
+            background-color: #776607;
+            border-radius: 10px;
+            padding: 20px;
+        }
+        #shop {
+            width: 300px;
+            background-color: #a008ad;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(10, 10, 0, 0.5);
+            margin-right: 20px;
+        }
+        #click-area {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        #clicker {
+            width: 200px;
+            height: 200px;
+            background-image: url('freaky (1).webp');
+            background-size: cover;
+            background-position: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+            border: 2px solid #01b4eb;
+            border-radius: 50%;
+        }
+        #stats, #achievements {
+            margin-bottom: 20px;
+        }
+        button {
+            background-color: #4a6f8c;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            display: block;
+        }
+        button:hover:not(.disabled) {
+            background-color: #3a5e7a;
+        }
+        button.disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
+
+button.enabled {
+    background-color: #4a6f8c;
+    cursor: pointer;
+}
+
+        #mute-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 15px;
+            background-color: rgb(1, 170, 128);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            z-index: 1001;
+        }
+        #mute-button.muted {
+            background-color: #ff4d4d;
+        }
+        #achievements p {
+            background-color: #2a3c5d;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+        @keyframes slide-in-right {
+            0% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+        @keyframes slide-out-right {
+            0% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+        }
+        .achievement {
+            background-color: #2a3c5d;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 5px 0;
+            color: white;
+            animation: slide-in-right 0.5s forwards;
+        }
+        .achievement.out {
+            animation: slide-out-right 0.5s forwards;
+        }
+    </style>
+</head>
+<body>
+    <!-- Audio elements without controls, autoplay and preload set -->
+    <audio id="background-music" loop autoplay preload="auto">
+        <source src="Sneaky-Snitch(chosic.com).mp3" type="audio/mp3">
+    </audio>
+
+    <audio id="click-sound" src="https://github.com/5quirre1/Freakybob.site/raw/main/i%E2%80%99m-spongebob-made-with-Voicemod.mp3"></audio>
+    <div id="container">
+        <div id="shop">
+            <h2>Shop</h2>
+            <button id="buy-autoclicker" class="disabled">Buy Autoclicker (100 clicks)</button>
+            <button id="buy-freakystar" class="disabled">Buy Freaky Star (300 clicks)</button>
+            <h3>Upgrades</h3>
+            <button id="buy-multiplier-1" class="disabled">1+ Clicks Multiplier (15 clicks)</button>
+            <button id="buy-multiplier-8" class="disabled">8+ Clicks Multiplier (120 clicks)</button>
+        </div>
+        <div id="click-area">
+            <div id="clicker"></div>
+            <div id="stats">
+                <p>Clicks: <span id="click-count">0</span></p>
+                <p>Clicks Per Second: <span id="clicks-per-second">0</span></p>
+            </div>
+            <div id="achievements">
+                <h2>Achievements</h2>
+            </div>
+        </div>
+    </div>
+    <!-- Mute/Unmute Button -->
+    <button id="mute-button">Mute Music</button>
+
+    <script>
+let clickCount = 0;
+let clicksPerSecond = 0;
+let autoClicker = false;
+let freakyStar = { owned: false, clicksPerSecond: 0 };
+let clickMultiplier = 1;
+let multipliers = {
+    1: { count: 0, max: 3, cost: 15, increment: 1 },
+    8: { count: 0, max: 3, cost: 120, increment: 8 }
+};
+const achievements = [
+    { name: 'Started this Journey', clicks: 1 },
+    { name: 'Beginner Clicker', clicks: 300 },
+    { name: 'You must love clicking freakybob', clicks: 900 },
+    { name: 'First 1000!', clicks: 1000 },
+    { name: 'Finger destroyer', clicks: 3000 },
+    { name: 'Intermediate clicker', clicks: 7000 },
+    { name: 'Mouse destroyer', clicks: 13000 },
+    { name: 'First 20,000!', clicks: 20000 },
+    { name: 'Beginner Freakybob', clicks: 27000 },
+    { name: 'King clicker', clicks: 70000 },
+    { name: "THE ULTIMATE FINGER DESTROYER!!", clicks: 100000 },
+    { name: 'Freakybob of the year!', clicks: 117000 },
+    { name: 'The literal Freakybob god', clicks: 130000 },
+    { name: 'The mouse is not dead yet!', clicks: 135000 },
+    { name: 'Freakybob of the century', clicks: 140000 },
+    { name: 'Freakybob of the millennium', clicks: 150000 },
+    { name: 'The ultimate Freakybob', clicks: 160000 },
+    { name: 'Freakybob of the universe', clicks: 190000 },
+    { name: 'The Freakybob God', clicks: 217000 },
+    { name: 'The..end..?', clicks: 240000 },
+    { name: 'For now...', clicks: 260000 }
+];
+
+const unlockedAchievements = new Set();
+let isMuted = false; // Default to unmuted
+
+function playClickSound() {
+    if (isMuted) return; // Prevent sound if muted
+
+    const clickSound = new Audio('https://github.com/5quirre1/Freakybob.site/raw/main/i%E2%80%99m-spongebob-made-with-Voicemod.mp3');
+    clickSound.play().catch(err => console.error(err));
+}
+
+function toggleMute() {
+    isMuted = !isMuted;
+    document.getElementById('mute-button').classList.toggle('muted', isMuted);
+    document.getElementById('background-music').muted = isMuted;
+    document.getElementById('mute-button').textContent = isMuted ? 'Unmute Music' : 'Mute Music';
+}
+
+function updateStats() {
+    document.getElementById('click-count').textContent = clickCount;
+    document.getElementById('clicks-per-second').textContent = clicksPerSecond;
+}
+
+function updateAchievements() {
+    const achievementsContainer = document.getElementById('achievements');
+    achievements.forEach(achievement => {
+        if (clickCount >= achievement.clicks && !unlockedAchievements.has(achievement.name)) {
+            unlockedAchievements.add(achievement.name);
+            const achievementElement = document.createElement('p');
+            achievementElement.textContent = achievement.name;
+            achievementElement.className = 'achievement';
+            achievementsContainer.appendChild(achievementElement);
+            setTimeout(() => {
+                achievementElement.classList.add('out');
+                setTimeout(() => achievementElement.remove(), 500);
+            }, 5000); // 5 seconds before fade out
+        }
+    });
+}
+
+function updateButtonStates() {
+    document.getElementById('buy-autoclicker').classList.toggle('disabled', clickCount < 100 || autoClicker);
+    document.getElementById('buy-freakystar').classList.toggle('disabled', clickCount < 300 || freakyStar.owned);
+    document.getElementById('buy-multiplier-1').classList.toggle('disabled', clickCount < multipliers[1].cost || multipliers[1].count >= multipliers[1].max);
+    document.getElementById('buy-multiplier-8').classList.toggle('disabled', clickCount < multipliers[8].cost || multipliers[8].count >= multipliers[8].max);
+}
+
+function buyItem(cost, itemName, enableNext) {
+    if (clickCount >= cost) {
+        clickCount -= cost;
+        updateButtonStates(); // Update button states after buying an item
+        if (enableNext) {
+            document.getElementById(enableNext).classList.remove('disabled');
+            document.getElementById(enableNext).classList.add('enabled');
+        }
+        updateStats();
+        updateAchievements();
+    }
+}
+
+function handleClick() {
+    playClickSound();
+    clickCount += 1 * clickMultiplier;
+    updateStats();
+    updateAchievements();
+    updateButtonStates(); // Update button states after a click
+}
+
+// Initialize game
+function initialize() {
+    document.getElementById('clicker').addEventListener('click', handleClick);
+    document.getElementById('buy-autoclicker').addEventListener('click', function() {
+        if (clickCount >= 100 && !autoClicker) {
+            autoClicker = true;
+            buyItem(100, 'buy-autoclicker', 'buy-freakystar');
+        }
+    });
+    document.getElementById('buy-freakystar').addEventListener('click', function() {
+        if (clickCount >= 300 && !freakyStar.owned) {
+            freakyStar.owned = true;
+            freakyStar.clicksPerSecond = 40;
+            buyItem(300, 'buy-freakystar', null);
+        }
+    });
+    document.getElementById('buy-multiplier-1').addEventListener('click', function() {
+        const upgrade = multipliers[1];
+        if (clickCount >= upgrade.cost && upgrade.count < upgrade.max) {
+            clickMultiplier += upgrade.increment;
+            upgrade.count += 1;
+            buyItem(upgrade.cost, 'buy-multiplier-1', null);
+        }
+    });
+    document.getElementById('buy-multiplier-8').addEventListener('click', function() {
+        const upgrade = multipliers[8];
+        if (clickCount >= upgrade.cost && upgrade.count < upgrade.max) {
+            clickMultiplier += upgrade.increment;
+            upgrade.count += 1;
+            buyItem(upgrade.cost, 'buy-multiplier-8', null);
+        }
+    });
+
+    // Auto-clicker and Freaky Star logic
+    setInterval(() => {
+        if (autoClicker) {
+            clickCount += 1 * clickMultiplier;
+            updateStats();
+            updateAchievements();
+        }
+    }, 1000);
+    
+    setInterval(() => {
+        if (freakyStar.owned) {
+            clickCount += freakyStar.clicksPerSecond;
+            updateStats();
+            updateAchievements();
+        }
+    }, 2000);
+
+    updateButtonStates(); // Set initial button states
+}
+
+initialize();
+
+// Add event listener for mute/unmute
+document.getElementById('mute-button').addEventListener('click', toggleMute);
+
+    </script>
+</body>
+</html>

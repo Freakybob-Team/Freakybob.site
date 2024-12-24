@@ -1,0 +1,313 @@
+body {
+     background-color: rgb(193, 111, 12);
+    font-family: "Noto Sans", sans-serif;
+}
+h1 {
+    text-align: center;
+    color: rgb(217, 224, 16);
+}
+p {
+    text-align: center;
+    color: rgb(206, 190, 190);
+}
+h2 {
+    text-align: center;
+    font-size: 20px;
+    color: #dbde06;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #dbde06;
+    margin-top: -50px;
+}
+a {
+    color: rgb(203, 171, 233);
+
+}
+h4 {
+    text-align: center;
+    font-size: 40px;
+    color: #e0ba9c;
+    margin-top: -5px;
+}
+#para4 {
+    color: rgb(2, 254, 250);
+    font-size: 20px;
+}
+#para5 {
+    color: aqua;
+    margin-top: -50px;
+}
+#para6 {
+    color: rgb(12, 240, 149);
+    margin-top: 40px;
+    text-align: left;
+}
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.button-container button {
+    background: none;
+    border: none;
+    color: #e7d915;
+    margin: 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 2px solid #c107b5;
+    transition: color 0.7s, background-color 0.7s;
+}
+.button-container button:hover {
+    color: #0f000f;
+    background-color: #f3ef14;
+    transform: scale(1.1);
+}
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 40px;
+}
+#freakybob-orgin, #freakybob-found {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#freakybob-orgin:hover, #freakybob-found:hover {
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+#freakybob-found {
+    width: 320px;
+}
+#bought-freakybob {
+    margin-left: 20px;
+    width: 320px;
+    margin-top: 40px;
+}
+#bought-freakybob:hover {
+    transition: 0.8s;
+    transform: scale(1.1);
+}
+
+#carousel-container {
+    margin-top: 120px;
+}
+#carousel {
+    display: flex;
+    overflow: hidden;
+    width: 400px;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+    border-radius: 8px;
+}
+.carousel-images img {
+    width: 400px;
+    height: auto;
+    cursor: pointer;
+}
+#para1, #para2, #para3 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bede09;
+}
+
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.point-button {
+    border-radius: 7px;
+    color: #a9e411;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+   margin-left: 634px;
+   background-color: #106d7e;
+}
+.point-button:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    background-color: #f3ef14;
+    color: #0f000f;
+}
+.DouKnow-button {
+    border-radius: 7px;
+    color: #a9e411;
+    border: none;
+    font-size: medium;
+    cursor: pointer;
+   margin-left: 579px;
+   background-color: #106d7e;
+}
+.DouKnow-button:hover {
+    transform: scale(1.1);
+    transition: 0.7s;
+    background-color: #f3ef14;
+    color: #0f000f;
+}
+.description {
+    color: rgb(209, 223, 15);
+    background-color: rgb(8, 128, 128);
+    border-radius: 9px;
+    font-size: 20px;
+}
+.close-button {
+    background-color: #c107b5;
+    color: rgb(40, 187, 187);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 5%;
+    }
+    #freakybob-orgin, #freakybob-found {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    #bought-freakybob {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .carousel-button {
+    background-color: #c107b5;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.carousel-button:hover {
+    background-color: #f3ef14;
+    color: #0f000f;
+}
+#carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
+    margin-right: -5px;
+}
+#carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    height: 200px;
+}
+.carousel-images {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+.carousel-images img {
+    width: 300px;
+    height: auto;
+    cursor: pointer;
+}
+#para1, #para2, #para3 {
+    text-align: left;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #bede09;
+}
+#para4 {
+    color: rgb(2, 254, 250);
+    font-size: 20px;
+}
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.modal img {
+    max-width: 110%;
+    max-height: 160%;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+h3 {
+    text-align: center;
+    font-size: 40px;
+    color: #dbde06;
+    margin-top: 90px;
+}
+h4 {
+    text-align: center;
+    font-size: 40px;
+    color: #dbde06;
+    margin-top: -30px;
+}
+
+#para6 {
+    color: rgb(12, 221, 218);
+    font-size: 20px;
+    text-align: center;
+
+}
+.point-button {
+    background-color: #106d7e;
+    margin-left: 30px;
+    border: #dbde06;
+    border-radius: 7px;
+}
+.DouKnow-button {
+    margin-top:20px;
+    background-color: #106d7e;
+    margin-left: -1px;
+    border: #dbde06;
+    border-radius: 7px;
+}
+} 
+/* :3 */
