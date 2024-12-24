@@ -1,12 +1,18 @@
 /* thanks https://github.com/hyperstown/pure-snow.js/blob/master/style.css <3 */
+
+* {
+  font-family: "Delius Swash Caps", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-  background: url("https://freakybob.site/images/chirstmas-1.png") no-repeat center center fixed;
+  background: url("../images/christmas-celebration-with-decorated-tree.jpg") no-repeat center center fixed;
   background-size: cover;
   overflow-x: hidden;
   min-height: 100vh;
   overflow-y: hidden;
   color: white;
-  font-family: 'Comic Sans MS', sans-serif;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -30,37 +36,39 @@ body::before {
 
 
 h1 {
+  margin-top: 80px;
   position: sticky;
   font-family: 'Comic Sans MS', sans-serif;
   text-align: center;
   color: rgb(218, 203, 3);
   font-size: 42px;
-  margin-top: -20px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-
 }
 
 h2 {
-  color: rgb(55, 255, 0);
+  color: #fff;
 }
-
 
 #info-button {
 margin-top: 12px;
   padding: 15px 25px;
   font-size: 18px;
   cursor: pointer;
-  background-color: rgb(41, 172, 5);
   color: white;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   max-width: 220px;
   width: 100%;
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
+    animation: penis 2s  ease-in-out infinite;
+    margin-top: 10px;
 }
 #info-button:hover {
-  background-color: rgb(102, 255, 163);
   transform: translateY(-3px) scale(1.05);
 }
 #gallery-button {
@@ -68,17 +76,21 @@ margin-top: 12px;
   padding: 15px 25px;
   font-size: 18px;
   cursor: pointer;
-  background-color: rgb(50, 172, 5);
   color: white;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   max-width: 220px;
   width: 100%;
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
+    animation: penis 2s  ease-in-out infinite;
+    margin-top: 10px;
 }
 #gallery-button:hover {
-  background-color: rgb(218, 3, 3);
   transform: translateY(-3px) scale(1.05);
 }
 #music-button {
@@ -86,17 +98,21 @@ margin-top: 12px;
   padding: 15px 25px;
   font-size: 18px;
   cursor: pointer;
-  background-color: rgb(218, 3, 3);
   color: white;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   max-width: 220px;
   width: 100%;
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
+    animation: penis 2s  ease-in-out infinite;
+    margin-top: 10px;
 }
 #music-button:hover {
-  background-color: rgb(50, 172, 5);
   transform: translateY(-3px) scale(1.05);
 }
 
@@ -105,17 +121,21 @@ margin-top: 12px;
   padding: 15px 25px;
   font-size: 18px;
   cursor: pointer;
-  background-color: rgb(218, 3, 3);
   color: white;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   max-width: 220px;
   width: 100%;
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
+    animation: penis 2s  ease-in-out infinite;
+    margin-top: 10px;
 }
 #team-button:hover {
-  background-color: rgb(50, 172, 5);
   transform: translateY(-3px) scale(1.05);
 }
 #activities-button {
@@ -123,18 +143,42 @@ margin-top: 12px;
   padding: 15px 25px;
   font-size: 18px;
   cursor: pointer;
-  background-color: rgb(50, 172, 5);
   color: white;
   border: none;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease;
   max-width: 220px;
   width: 100%;
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
+    animation: penis 2s  ease-in-out infinite;
+    margin-top: 10px;
 }
 #activities-button:hover {
-  background-color: rgb(218, 3, 3);
   transform: translateY(-3px) scale(1.05);
+}
+
+#activities-button:after {
+  content: '✨';
+  position: absolute;
+  color: #fffacd;
+  font-size: 1.2em;
+  top: -5px;
+  left: 15px;
+  animation: sparkle 2s infinite ease-in-out;
+}
+
+
+.ok {
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.d {
+  margin-bottom: 10px;
 }
 
   
@@ -156,18 +200,20 @@ margin-top: 12px;
 }
 #music-player {
   position: fixed;
-  bottom: 20px;
+  bottom: 150px;
   right: 20px;
   width: 220px;
-  background-color: #006b7971; 
-  border: 4px solid #cd0b0b;
   border-radius: 15px;
   padding: 15px 10px;
   color: #fff;
   font-family: Arial, sans-serif;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   text-align: center;
   z-index: 1000;
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
 }
 
 
@@ -175,15 +221,22 @@ margin-top: 12px;
   font-size: 0.9em;
   font-weight: bold;
   margin-bottom: 8px;
-  color: #92fc77;
-  background-color: rgb(10, 95, 71);
+  background: rgb(131,58,180);
+background: -moz-radial-gradient(circle, rgba(131,58,180,.1) 0%, rgba(253,29,29,0.1) 50%, rgba(252,176,69,.1) 100%);
+background: -webkit-radial-gradient(circle, rgba(131,58,180,.1) 0%, rgba(253,29,29,.1) 50%, rgba(252,176,69,.1) 100%);
+background: radial-gradient(circle, rgba(131,58,180,.1) 0%, rgba(253,29,29,.1) 50%, rgba(252,176,69,.1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=.1);
   border-radius: 8px;
   padding: 5px 10px;
 }
 
 
 #music-player button {
-  background-color: #63b222; 
+  background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 100px solid rgba(255,255,255);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -193,7 +246,6 @@ margin-top: 12px;
   font-size: 1em;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 #music-player #brainrot-button {
   font-size: 11px;
@@ -229,14 +281,7 @@ a {
 text-decoration: none;
 color: wheat;
 }
-#socials {
-transition: all 0.3s ease;
-text-align: center;
-margin-top: -20px;
-}
-#socials:hover {
-transform: translateY(-3px) scale(1.05);
-}
+
 #music-credits {
   text-align: center;
   margin-top: 20px;
@@ -250,6 +295,65 @@ transform: translateY(-3px) scale(1.05);
 
 #a-music-credits:hover {
   color: orange;
+}
+
+.footer {
+  margin-top: 100px;
+  display: flex;
+        border: 1px solid #ffff;
+        width:2000px;
+        height:200px;
+        background: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
+    border: 1px solid rgba(255,255,2555,0.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
+}
+
+.footer p {
+  margin-left: 39%;
+}
+
+.footer img {
+  width: 60px;
+  height: 50px;
+}
+
+#social-buttons-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: -425px;
+  margin-top: -10px;
+
+}
+
+#social-buttons-container img {
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  transition: 0.3s;
+}
+
+#discord-button img {
+  width: 80px;
+  height: 60px;
+}
+
+#pikidiary-button img {
+  width: 70px;
+  height: 40px;
+}
+
+#instagram-button {
+  width: 70px;
+  height: 40px;
+}
+
+#social-buttons-container img:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 600px) {
@@ -328,11 +432,41 @@ margin-top: -10px;
 }
 }
 
+@keyframes penis {
+  0% {
+      box-shadow: none;
+
+  }
+
+  50%{
+     box-shadow:  0 0px 12px 0 rgb(201, 0, 201);
+  }
+
+  100% {
+      box-shadow: none;
+  }
+}
 
 
 
 
 
-
+@keyframes swag {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+    color: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
 
 
