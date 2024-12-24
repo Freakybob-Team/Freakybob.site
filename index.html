@@ -65,7 +65,7 @@
 <html lang="en">
 <head>
     <title>Christmasbob.site</title>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A place for Freakybob.">
     <meta content="Christmas.site" property="og:title" />
@@ -79,8 +79,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@twemoji/api@latest/dist/twemoji.min.js" crossorigin="anonymous"></script>
+<script
+			  src="https://code.jquery.com/jquery-3.7.1.js"
+			  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+			  crossorigin="anonymous"></script>
+<style>
+img.emoji {
+    height: 1em;
+    width: 1em;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+}
+</style>
 </head>
 <body>
+    <script>
+        // https://stackoverflow.com/questions/56381173/how-to-resize-twemoji-emojis
+    $(document).ready(function () {  
+        document.body = twemoji.parse(document.body);
+});
+    </script>
     <div id="snow" data-count="200"></div>
     <noscript>
         <link rel="stylesheet" href="css/js-disabled.css">
@@ -90,7 +109,7 @@
 
     <a href="https://freakybob.site/info"><button id="info-button">Check out the info page!</button></a>
     <h2>
-        <marquee id="marquee-text">Freakybob.site PWA is out! (Chrome)</marquee>
+        <marquee id="marquee-text">❤️ Revamp is out NOW!! Merry Christmas, with love from the Freakybob Team. ❤️</marquee>
     </h2>
     <a href="https://freakybob.site/dev" ><button id="team-button">See the devs behind freakybob.site!</button></a>
     
