@@ -141,6 +141,11 @@
     </div>
 </footer>
     <script src="js/christmasmusic.js"></script>
+<script>
+  if (typeof navigator.serviceWorker !== 'undefined') {
+    navigator.serviceWorker.register('js/pwabuilder-sw.js')
+  }
+</script>
 </body>
 <script src="js/twemoji.js"></script>
 </html>
