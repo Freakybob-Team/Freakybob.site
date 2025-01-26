@@ -7,7 +7,7 @@
 }
 
 body {
-  background: url("../images/christmas-celebration-with-decorated-tree.jpg") no-repeat center center fixed;
+  background-image: url('../images/Bikinibottom.jpg');
   background-size: cover;
   color: white;
   min-width: 100vw;
@@ -186,91 +186,6 @@ margin-top: 12px;
   text-align: center;
   padding: 15px;
 }
-.snowflake {
-  margin-top: -38px;
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background: linear-gradient(white, white);
-  border-radius: 50%;
-  filter: drop-shadow(0 0 10px white);
-  align-self: center;
-  z-index: -2;
-  margin-left: -790px;
-}
-#music-player {
-  position: fixed;
-  bottom: 150px;
-  right: 20px;
-  width: 220px;
-  border-radius: 15px;
-  padding: 15px 10px;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  z-index: 1000;
-  background: none;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
-    border: 1px solid rgba(255,255,2555,0.18);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
-}
-
-
-#music-player #current-song {
-  font-size: 0.9em;
-  font-weight: bold;
-  margin-bottom: 8px;
-  background: rgb(131,58,180);
-background: -moz-radial-gradient(circle, rgba(131,58,180,.1) 0%, rgba(253,29,29,0.1) 50%, rgba(252,176,69,.1) 100%);
-background: -webkit-radial-gradient(circle, rgba(131,58,180,.1) 0%, rgba(253,29,29,.1) 50%, rgba(252,176,69,.1) 100%);
-background: radial-gradient(circle, rgba(131,58,180,.1) 0%, rgba(253,29,29,.1) 50%, rgba(252,176,69,.1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#833ab4",endColorstr="#fcb045",GradientType=.1);
-  border-radius: 8px;
-  padding: 5px 10px;
-}
-
-
-#music-player button {
-  background: none;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
-    border: 100px solid rgba(255,255,255);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 35px;
-  height: 35px;
-  margin: 5px 3px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-#music-player #brainrot-button {
-  font-size: 11px;
-  width: 110px;
-  height: 37px;
-  border-radius: 5px;
-}
-
-#music-player button:hover {
-  background-color: #ff6347;
-  transform: scale(1.1);
-}
-
-
-
-
-#music-player::after {
-  content: '✨';
-  position: absolute;
-  color: #fffacd;
-  font-size: 1.2em;
-  top: -5px;
-  left: 15px;
-  animation: sparkle 2s infinite ease-in-out;
-}
 
 
 @keyframes sparkle {
@@ -311,7 +226,10 @@ color: wheat;
   backdrop-filter: blur(10px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   padding: 10px 20px;
+  flex-direction: row;
 }
+
+
 
 .footer p {
   margin-left: 20px;
@@ -460,6 +378,20 @@ h1 {
 }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f100; 
+  border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
 @keyframes penis {
   0% {
       box-shadow: none;
@@ -474,6 +406,8 @@ h1 {
       box-shadow: none;
   }
 }
+
+#socialold {display: none;}
 
 
 
@@ -500,4 +434,19 @@ h1 {
 
 
 
+@media (max-width: 700px) {
+  .footer {
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+  }
 
+  .footer img {
+    display: none;
+  }
+
+  #socialold {
+    display: block;
+    font-size: 20px;
+  }
+}
