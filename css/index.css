@@ -17,6 +17,34 @@
     overflow-x: hidden;
     min-height: 100vh;
   }
+
+  #old {
+    position: fixed;
+            top: 5px;
+            right: 4px;
+            padding: 10px 15px;
+            background-color: rgb(1, 170, 128);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 18px;
+            z-index: 1001;
+            font-family: sans-serif;
+            color: #fff;
+            transition: .3s;
+  }
+
+  #container {
+    color: white;
+    min-width: 100vw;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+    min-height: 100vh;
+  } 
   
   
   body::before {
