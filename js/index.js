@@ -1,6 +1,8 @@
 const newui = document.getElementById("container");
 const oldui = document.getElementById("oldcontainer");
 const buttont = document.getElementById("old");
+const ks = new Audio('../audio/movement-200697.mp3');
+
 let isold = JSON.parse(localStorage.getItem("isold"));
 
 if (isold) {
@@ -46,3 +48,12 @@ document.body.style.overflowY = 'scroll';
 localStorage.setItem("isold", JSON.stringify(isold));
   }
 }
+
+ks.loop = true;
+let userInteraction = 0;
+
+document.addEventListener('click', () => {
+  if (userInteraction) return;
+  userInteraction++;
+  ks.play();
+})
