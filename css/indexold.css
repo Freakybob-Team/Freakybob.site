@@ -1,0 +1,292 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: -1;
+}
+
+body {
+    background-image: url('../images/Bikinibottom.jpg');
+    background-color: aqua;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Sans MS', sans-serif;
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    color: white;
+}
+
+h1 {
+    position: sticky;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center;
+    color: rgb(218, 203, 3);
+    font-size: 42px;
+    margin-top: -20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+
+}
+
+h2 {
+    color: yellow;
+}
+
+button {
+    margin-top: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 100%;
+}
+button:hover {
+    background-color: rgb(218, 203, 3);
+    transform: translateY(-3px) scale(1.05);
+}
+#info-button {
+margin-top: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 100%;
+}
+#info-button:hover {
+    background-color: rgb(218, 203, 3);
+    transform: translateY(-3px) scale(1.05);
+}
+#gallery-button {
+    margin-top: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 100%;
+}
+#gallery-button:hover {
+    background-color: rgb(218, 203, 3);
+    transform: translateY(-3px) scale(1.05);
+}
+#music-button {
+    margin-top: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 100%;
+}
+#music-button:hover {
+    background-color: rgb(218, 203, 3);
+    transform: translateY(-3px) scale(1.05);
+}
+
+#team-button {
+    margin-top: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 100%;
+}
+#team-button:hover {
+    background-color: rgb(218, 203, 3);
+    transform: translateY(-3px) scale(1.05);
+}
+#activities-button {
+    margin-top: 12px;
+    padding: 15px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 100%;
+}
+#scratch-button:hover {
+    background-color: rgb(218, 203, 3);
+    transform: translateY(-3px) scale(1.05);
+}
+#mute-button {
+    position: fixed;
+    margin-top:-640px;
+    margin-left: 88%;
+    padding: 5px 10px;
+    background-color: rgb(1, 170, 128);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    z-index: 1001;
+}
+
+#github-button,
+#discord-button,
+#bluesky-button,
+#freakyblog-logo,
+#pikidiary-button {
+    position: fixed;
+    z-index: 1001;
+}
+
+#github-button {
+   margin-top: 660px;
+margin-left: 190px;
+transition: .3s;
+transition-timing-function: ease-in-out;
+}
+
+#discord-button {
+    margin-top: 660px;
+    margin-left: 80px;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+#bluesky-button {
+    margin-top: 660px;
+    margin-left: -50px;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+
+#github-button img,
+#bluesky-button img {
+    width: 40px;
+    height: 40px;
+    transition: .3s;
+}
+
+#github-button img:hover,
+#bluesky-button img:hover {
+    transform: scale(1.1);
+}
+#discord-button img {
+    width: 80px;
+    height: 60px;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+#discord-button img:hover {
+    transform: scale(1.1);
+}
+
+#freakyblog-logo {
+    position: fixed;
+    margin-top: 620px;
+    margin-left: -210px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: .3s;
+    transition-timing-function: ease-in-out;
+}
+#freakyblog-logo img {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+}
+    #freakyblog-logo:hover {
+        transform: scale(1.1);
+    }
+    
+#gpl-3 {
+    text-align: center;
+    padding: 15px;
+}
+a {
+text-decoration: none;
+color: wheat;
+}
+#socials {
+transition: all 0.3s ease;
+text-align: center;
+margin-top: -20px;
+}
+#socials:hover {
+transform: translateY(-3px) scale(1.05);
+}
+#music-credits {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#a-music-credits {
+    transition-property: color;
+    transition-duration: .7s;
+    transition-timing-function: ease-in-out;
+}
+
+#a-music-credits:hover {
+    color: orange;
+}
+
+@media screen and (max-width: 600px) {
+#freakyblog-logo {
+margin-top: -580px;
+}
+#marquee-text {
+font-size: 15px;
+}
+#info-button {
+font-size: 15px;
+}
+#team-button {
+font-size: 15px;
+}
+#gallery-button {
+font-size: 15px;
+}
+#music-button {
+font-size: 15px;
+}
+#scratch-button {
+font-size: 15px;
+}
+}
+
