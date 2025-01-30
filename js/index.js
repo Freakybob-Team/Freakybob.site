@@ -12,10 +12,14 @@ let isold = JSON.parse(localStorage.getItem("isold"));
 
 document.body.style.overflow = 'hidden';
 
-let popupis = localStorage.getItem("p");
+let popupis = localStorage.getItem("dpe");
 
 if (popupis) {
   popupl.style.display = 'none';
+}
+
+else {
+  popup.style.display  = 'flex';
 }
 
 
