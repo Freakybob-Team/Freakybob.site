@@ -12,7 +12,7 @@ let isold = JSON.parse(localStorage.getItem("isold"));
 
 document.body.style.overflow = 'hidden';
 
-let popupis = localStorage.getItem("dpe");
+let popupis = localStorage.getItem("cacheWarn");
 
 if (popupis) {
   popupl.style.display = 'none';
@@ -117,6 +117,6 @@ function popupc() {
 
   setTimeout(() => popupl.style.display = 'none', 480);
   poupis = true;
-  localStorage.setItem("p", popupis);
+  localStorage.setItem("cacheWarn", popupis);
 document.body.style.overflowY = 'scroll';
 }
