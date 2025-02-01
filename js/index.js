@@ -16,6 +16,7 @@ let popupis = localStorage.getItem("cacheWarn");
 
 if (popupis) {
   popupl.style.display = 'none';
+  document.body.style.overflowY = 'scroll';
 }
 
 else {
