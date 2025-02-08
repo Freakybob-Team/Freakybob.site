@@ -1,13 +1,19 @@
-# Pushes the contents of the repo to the Codeberg mirror
-name: Mirror to Codeberg
-on: push
+# Sync repo to the Codeberg mirror
+name: GitHub -> Codeberg
+on:
+  push:
+    branches:
+    - '**'
+
 jobs:
   codeberg:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with: { fetch-depth: 0 }
-      - uses: pixta-dev/repository-mirroring-action@v1
         with:
-          target_repo_url: git@codeberg.org:Freakybob/Freakybob.site.git
-          ssh_private_key: ${{ secrets.CODEBERG_SSH }}
+          fetch-depth: 0
+      - uses: spyoungtech/mirror-action@v0.5.1
+        with:
+          REMOTE: "https://codeberg.org/Freakybob/Freakybob.site.git"
+          GIT_USERNAME: Wish13yt
+          GIT_PASSWORD: ${{ secrets.GIT_PASSWORD }}
