@@ -226,7 +226,7 @@
 
         <h2>
 
-            <marquee id="marquee-text">THEMES UPDATE OUT NOW!!!</marquee>
+            <marquee id="marquee-text">THANK YOU FOR EVERYTHING!!!! WE LOVE YOU!!!!</marquee>
 
         </h2>
         <nav>
@@ -360,7 +360,7 @@ color: white;">
 
             font-weight: 900;
 
-            ">THEMES UPDATE OUT NOW!!!</marquee>
+            ">THANK YOU FOR EVERYTHING!!!! WE LOVE YOU!!!!</marquee>
 
         </h2>
 
@@ -385,8 +385,264 @@ color: white;">
     </div>
 
 <button id="old" onclick="old()">Old theme</button>
-<div id="popup"><div id="popupc"><h1>Attention!</h1><br><p>Hey there! Freakybob.site may have gotten updates, and to view new updates, you must press CTRL + F5. Thank you!</p><br><button id="ok" onclick="popupc()">Continue</button><div></div>
+
+
+<div id="sad">
+    <div id="sadc">
+        <h1 style="color:rgb(221, 162, 251); font-size: 2rem;">We have ended major updates for Freakybob.site.</h1>
+        <p style="color:rgb(215, 212, 24);">After almost 6 months of updates, we have finally reached the end. We are honestly burnt out of ideas for freakybob.site, we have been since December.. but we stuck around. We're so grateful for the months of support and happiness that we have gained from this <strong>1</strong> website. We hope you understand about this decision and we're sorry for the inconvenience. As a thank you for everything, we have decided to make a gift for you!</p>
+        <br>
+        <div id="gift-image" style="display: none;"></div>
+        <div id="gift-message" style=" justify-content: center; align-items: center; width: 100%;">
+    <p style="font-size: 1.5rem; color: rgb(215, 212, 24); text-align: center;">Thank you for everything :)</p>
+</div>
+
+        <button id="reveal-gift">Reveal</button>
+        <button id="ok" onclick="">ok.. :c</button>
+    </div>
+</div>
+
+<style>
+    #sad {
+        font-family: "Comic Sans MS", sans-serif !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(48, 47, 92, 0.566);
+        backdrop-filter: blur(9px);
+        z-index: 1001;
+        animation: fade-in 0.5s ease-in-out;
+    }
+    #sadc, #sadc h1, #sadc p, #sadc button {
+    font-family: "Comic Sans MS" !important;
+}
+    #sadc {
+        font-family: "Comic Sans MS", sans-serif !important;
+        border: 1px solid rgba(68, 70, 212, 0.807);
+        backdrop-filter: blur(9px);
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(145, 87, 39, 0.3), rgba(171, 73, 184, 0.1)), rgba(49, 2, 102, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        width: 40%;
+        transition: .3s;
+        animation: pop-in 1s ease-in-out;
+    }
+    #ok, #reveal-gift {
+        background: linear-gradient(70deg, rgb(122, 19, 159) 0%, rgb(31, 179, 181) 100%);
+        border: none;
+        color: #fff;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+        height: 40px;
+        width: 100px;
+        transition: .3s;
+    }
+    #ok:hover, #reveal-gift:hover {
+        box-shadow: 0px 0px 10px rgb(34,193,195);
+    }
+    
+    #gift-image img{
+        cursor: pointer;
+    }
+    @keyframes fade-in {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+    #sad.gone {
+  animation: fade-out .5s ease-in-out;
+}
+
+@media screen and (max-width: 786px) {
+    html, body {
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+
+    #sad {
+        font-family: "Comic Sans MS", sans-serif !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(48, 47, 92, 0.748);
+        backdrop-filter: blur(9px);
+        z-index: 1001;
+        animation: fade-in 0.5s ease-in-out;
+    }
+
+    #sadc h1 {
+        font-size: 1.5rem;
+    }
+
+    #sadc p {
+        font-size: 1rem;
+    }
+
+    #gift-message {
+        display: none;
+    }
+
+    #sadc {
+        border: 1px solid rgba(68, 70, 212, 0.807);
+        backdrop-filter: blur(9px);
+        padding: 20px;
+        background: linear-gradient(135deg, rgba(145, 87, 39, 0.3), rgba(171, 73, 184, 0.1)), rgba(49, 2, 102, 0.1);
+        border-radius: 8px;
+        text-align: center;
+        width: 70%;
+        transition: .3s;
+        animation: pop-in 1s ease-in-out;
+    }
+
+
+    #gift-message.show {
+        display: block;
+    }
+}
+
+    
+</style>
+
+<script>
+window.onload = function() {
+
+    const popupSeen = getCookie("popupSeen");
+
+    if (popupSeen) {
+        document.getElementById("sad").style.display = "none";
+        return;
+    }
+    
+
+    document.getElementById("sad").style.display = "flex";
+    
+    let revealButton = document.getElementById("reveal-gift");
+    let giftImage = document.getElementById("gift-image");
+    let content = document.querySelectorAll('#sadc h1, #sadc p, #reveal-gift, #ok');
+    let giftMessage = document.getElementById("gift-message");
+    giftMessage.style.display = 'none';
+    
+    revealButton.addEventListener("click", function() {
+        content.forEach(element => {
+            element.classList.add("fade-out");
+            setTimeout(() => {
+                element.style.display = "none";
+            }, 500);
+        });
+
+        setTimeout(function() {
+            giftMessage.style.display = "flex";
+            giftMessage.classList.add("fade-in");
+            giftMessage.innerHTML = `<p style="text-align: center !important; font-size: 1.5rem; color: rgb(215, 212, 24);">Thank you for everything :)</p>`;
+
+            giftImage.style.display = "block";
+            giftImage.classList.add("fade-in");
+
+            let imagePath = '/images/thankU.png'; 
+
+            if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+                imagePath = '/images/thankU_mobile.png';
+            }
+
+            let img = new Image();
+            img.onload = function() {
+                giftImage.innerHTML = `<img src="${imagePath}" alt="Gift" style="width:100%; border-radius:8px;" id="downloadable-image">`;
+            };
+            img.onerror = function() {
+                giftImage.innerHTML = `<p style="color:red;">Image not found. Please check the image path.</p>`;
+            };
+
+            img.src = imagePath;
+        }, 500); 
+    });
+
+    document.addEventListener("click", function(event) {
+        if (event.target && event.target.id === "downloadable-image") {
+            const link = document.createElement('a');
+            link.href = event.target.src;
+            link.download = 'thankU!!!.png';
+            link.click();
+        }
+    });
+
+    document.getElementById("ok").addEventListener("click", function() {
+        const sadElement = document.getElementById("sad");
+
+
+        setCookie("popupSeen", "true", 12); 
+
+        sadElement.classList.add("gone");
+
+        setTimeout(function() {
+            sadElement.style.display = "none";
+        }, 500); 
+    });
+
+    sad.addEventListener("click", (e) => {
+        if (e.target === sad) {
+            sad.classList.add("gone");
+
+            setTimeout(function() {
+                sad.style.display = "none";
+            }, 500);
+        }
+    });
+};
+
+
+function setCookie(name, value, days) {
+    let expires = "";
+    if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+
+function getCookie(name) {
+    const nameEQ = name + "=";
+    const ca = document.cookie.split(';');
+    for (let i = 0; i < ca.length; i++) {
+        let c = ca[i].trim();
+        if (c.indexOf(nameEQ) === 0) {
+            return c.substring(nameEQ.length, c.length);
+        }
+    }
+    return null;
+}
+
+
+</script>
+
 </body>
+
 
 <script src="js/twemoji.js"></script>
 
@@ -395,3 +651,4 @@ color: white;">
 </html>
 
 <!--I love boys <3 -->
+
