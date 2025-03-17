@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://classic.freakybob.site/91424/people.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A place for Freakybob.">
+    <meta content="Freakybob" property="og:title">
+    <meta content="These people helped in some way, shape, or form" property="og:description">
+    <meta content="https://freakybob.site/people" property="og:url">
+    <meta content="https://github.com/5quirre1/Freakybob.site/blob/main/Snapshots/Screenshot%202024-08-29%2012.38.20%20AM.png" property="og:image">
+    <meta content="#006b79" data-react-helmet="true" name="theme-color">
+    <link rel="icon" type="image/png" href="https://classic.freakybob.site/91424/images/Freaky_Bob_people.png">
+    <title>Others</title>
+    <style>
+        body {
+            background-color: #2cfd9b; 
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .button-container button {
+            background: none;
+            border: none;
+            color: #555;
+            margin: 0 15px;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 2px solid #555;
+            transition: color 0.3s, background-color 0.3s;
+        }
+        .button-container button:hover {
+            color: #6f0279;
+            background-color: #f3ef14;
+        }
+        .contributors {
+            text-align: center;
+            margin-top: 30px;
+        }
+        .contributors button {
+            background-color: #d6c20b;
+            border: none;
+            color: #6d5a05;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 10px;
+            margin: 0 10px;
+        }
+        .contributors button:hover {
+            color: #f106f1;
+        }
+        .description {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 20px;
+            color: #333;
+        }
+        .image-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .image-container img {
+            width: 200px;
+            height: auto;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        audio {
+            display: none;
+        }
+        #main-image {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <img id="main-image" src="./Others_files/giancafort.jpeg" alt="Main Image">
+    <h1>People who didn't help but still deserve to be here :)</h1>
+    <audio src="audio/copyright-free-background-music-no-copyright-music-216517.mp3" loop="" autoplay="">
+    </audio>
+    <div class="button-container">
+        <a href="https://freakybob.site/">
+            <button>Go back to Main Website :3</button>
+        </a>
+    </div>
+
+    <div class="contributors">
+        <button onclick="showInfo('Saam')">Saam</button>
+        <button onclick="showInfo('KM')">KM</button>
+        <button onclick="showInfo('Noah')">Noah</button>
+        <button onclick="showInfo('Gianca')">Gianca</button>
+    </div>
+    <div id="description" class="description"></div>
+
+    <div class="image-container" id="person-image" style="display: block;">
+        <img id="personImage" alt="Person Image" src="">
+    </div>
+
+    <script>
+let giancaClickCount = 0;
+let isGiancaReplaced = false;
+let kmClickCount = 0;
+let isKMReplaced = false;
+
+    
+        function showInfo(name) {
+            const descriptions = {
+        'Saam': 'Saam is cool yay!',
+        'KM': 'is cooler fortnite player',
+        'Noah': 'Noah is awesome frfr',
+        'Gianca': 'gianca is cooler fortnite player ',
+            };
+
+            const images = {
+        'Saam': 'images/pfps/Saam.webp',
+        'KM':   isKMReplaced ? 'images/pfps/KM.png' : 'images/pfps/KM.webp',
+        'Noah': 'images/pfps/Noah.webp',
+        'Gianca': isGiancaReplaced ? 'images/pfps/giancafort.jpeg' : 'images/pfps/giancanew.png',
+            };
+
+            const descriptionDiv = document.getElementById('description');
+            const personImage = document.getElementById('person-image');
+            const image = document.getElementById('personImage');
+
+            descriptionDiv.innerText = descriptions[name] || 'Information not available.';
+            image.src = images[name] || '';
+            personImage.style.display = (name in images) ? 'block' : 'none';
+
+             if (name === 'Gianca') {
+        image.onclick = handleGiancaImageClick; 
+    } else if (name === 'KM') {
+        image.onclick = handleKMImageClick;
+    }
+}
+        function handleGiancaImageClick() {
+    if (isGiancaReplaced) return;
+
+    giancaClickCount++;
+    if (giancaClickCount >= 10) {
+        const image = document.getElementById('personImage');
+        image.src = 'images/pfps/giancafort.jpeg';
+        isGiancaReplaced = true;
+    }
+}
+function handleKMImageClick() {
+    if (isKMReplaced) return;
+
+    kmClickCount++;
+    if (kmClickCount >= 10) {
+        const image = document.getElementById('personImage');
+        image.src = 'images/pfps/KM.png';
+        isKMReplaced = true;
+    }
+}
+    </script>
+<script defer="" src="./Others_files/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;rayId&quot;:&quot;922020eaae5961ad&quot;,&quot;version&quot;:&quot;2025.1.0&quot;,&quot;r&quot;:1,&quot;token&quot;:&quot;08eaee7990434d9497764696f8790d13&quot;,&quot;serverTiming&quot;:{&quot;name&quot;:{&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfSpeedBrain&quot;:true,&quot;cfCacheStatus&quot;:true}}}" crossorigin="anonymous"></script>
+
+
+</body></html>
