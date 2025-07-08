@@ -226,7 +226,7 @@
 
         <h2>
 
-            <marquee id="marquee-text">THANK YOU FOR EVERYTHING!!!! WE LOVE YOU!!!!</marquee>
+            <marquee id="marquee-text">Alert! Freakybob.site will NOT be renewed in August, unless something changes. Currently, it costs $25 to continue having this domain up. After it expires, freakybob.site and all its subdomains will not work, and you'll have to use a GitHub or possibly a Vercel domain to use Freakybob websites.</marquee>
 
         </h2>
         <nav>
@@ -360,7 +360,7 @@ color: white;">
 
             font-weight: 900;
 
-            ">THANK YOU FOR EVERYTHING!!!! WE LOVE YOU!!!!</marquee>
+            ">Alert! Freakybob.site will NOT be renewed in August, unless something changes. Currently, it costs $25 to continue having this domain up. After it expires, freakybob.site and all its subdomains will not work, and you'll have to use a GitHub or possibly a Vercel domain to use Freakybob websites.</marquee>
 
         </h2>
 
@@ -389,15 +389,14 @@ color: white;">
 
 <div id="sad">
     <div id="sadc">
-        <h1 style="color:rgb(221, 162, 251); font-size: 2rem;">We have ended major updates for Freakybob.site.</h1>
-        <p style="color:rgb(215, 212, 24);">After almost 6 months of updates, we have finally reached the end. We are honestly burnt out of ideas for freakybob.site-- we have been since December-- but we stuck around. We're so grateful for the months of support and happiness that we have gained from this <strong>1</strong> website. We hope you understand about this decision and we're sorry for the inconvenience. As a thank you for everything, we have decided to make a gift for you!</p>
+        <h1 style="color:rgb(221, 162, 251); font-size: 2rem;">Domain Alert!</h1>
+        <p style="color:rgb(215, 212, 24);">Freakybob.site will NOT be renewed in August, unless something changes. Currently, it costs $25 to continue having this domain up. After it expires, freakybob.site and all its subdomains will not work, and you'll have to use a GitHub or possibly a Vercel domain to use Freakybob websites.
+</p>
         <br>
         <div id="gift-image" style="display: none;"></div>
         <div id="gift-message" style=" justify-content: center; align-items: center; width: 100%;">
-    <p style="font-size: 1.5rem; color: rgb(215, 212, 24); text-align: center;">Thank you for everything :)</p>
 </div>
 
-        <button id="reveal-gift">Reveal</button>
         <button id="ok" onclick="">ok.. :c</button>
     </div>
 </div>
@@ -546,40 +545,6 @@ window.onload = function() {
     let content = document.querySelectorAll('#sadc h1, #sadc p, #reveal-gift, #ok');
     let giftMessage = document.getElementById("gift-message");
     giftMessage.style.display = 'none';
-    
-    revealButton.addEventListener("click", function() {
-        content.forEach(element => {
-            element.classList.add("fade-out");
-            setTimeout(() => {
-                element.style.display = "none";
-            }, 500);
-        });
-
-        setTimeout(function() {
-            giftMessage.style.display = "flex";
-            giftMessage.classList.add("fade-in");
-            giftMessage.innerHTML = `<p style="text-align: center !important; font-size: 1.5rem; color: rgb(215, 212, 24);">Thank you for everything :)</p>`;
-
-            giftImage.style.display = "block";
-            giftImage.classList.add("fade-in");
-
-            let imagePath = '/images/thankU.png'; 
-
-            if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
-                imagePath = '/images/thankU_mobile.png';
-            }
-
-            let img = new Image();
-            img.onload = function() {
-                giftImage.innerHTML = `<img src="${imagePath}" alt="Gift" style="width:100%; border-radius:8px;" id="downloadable-image">`;
-            };
-            img.onerror = function() {
-                giftImage.innerHTML = `<p style="color:red;">Image not found. Please check the image path.</p>`;
-            };
-
-            img.src = imagePath;
-        }, 500); 
-    });
 
     document.addEventListener("click", function(event) {
         if (event.target && event.target.id === "downloadable-image") {
