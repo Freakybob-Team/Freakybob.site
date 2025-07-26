@@ -380,70 +380,7 @@ color: white;">
 
 <button id="old" onclick="old()">Old theme</button>
 
-
-<div id="sad">
-    <div id="sadc">
-        <h1 style="color:rgb(221, 162, 251); font-size: 2rem;">Domain Alert!</h1>
-        <p style="color:rgb(215, 212, 24);">Freakybob.site will NOT be renewed in August, unless something changes. Currently, it costs $25 to continue having this domain up. After it expires, freakybob.site and all its subdomains will not work, and you'll have to use a GitHub or possibly a Vercel domain to use Freakybob websites.
-</p>
-        <br>
-        <div id="gift-image" style="display: none;"></div>
-        <div id="gift-message" style=" justify-content: center; align-items: center; width: 100%;">
-</div>
-
-        <button id="ok" onclick="">ok.. :c</button>
-    </div>
-</div>
-
 <style>
-    #sad {
-        font-family: "Comic Sans MS", sans-serif !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(48, 47, 92, 0.566);
-        backdrop-filter: blur(9px);
-        z-index: 1001;
-        animation: fade-in 0.5s ease-in-out;
-    }
-    #sadc, #sadc h1, #sadc p, #sadc button {
-    font-family: "Comic Sans MS" !important;
-}
-    #sadc {
-        font-family: "Comic Sans MS", sans-serif !important;
-        border: 1px solid rgba(68, 70, 212, 0.807);
-        backdrop-filter: blur(9px);
-        padding: 20px;
-        background: linear-gradient(135deg, rgba(145, 87, 39, 0.3), rgba(171, 73, 184, 0.1)), rgba(49, 2, 102, 0.1);
-        border-radius: 8px;
-        text-align: center;
-        width: 40%;
-        transition: .3s;
-        animation: pop-in 1s ease-in-out;
-    }
-    #ok, #reveal-gift {
-        background: linear-gradient(70deg, rgb(122, 19, 159) 0%, rgb(31, 179, 181) 100%);
-        border: none;
-        color: #fff;
-        border-radius: 8px;
-        font-size: 20px;
-        cursor: pointer;
-        height: 40px;
-        width: 100px;
-        transition: .3s;
-    }
-    #ok:hover, #reveal-gift:hover {
-        box-shadow: 0px 0px 10px rgb(34,193,195);
-    }
-    
-    #gift-image img{
-        cursor: pointer;
-    }
     @keyframes fade-in {
     0% {
       opacity: 0;
