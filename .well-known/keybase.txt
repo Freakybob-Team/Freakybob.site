@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/freakybobteam
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://freakybob.site
+  * I am freakybobteam (https://keybase.io/freakybobteam) on keybase.
+  * I have a public key ASBKZu6j0_KUOFSWxjEfw8i2DGy5cD0Oia4TNZcswtSJtAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01204a66eea3d3f294385496c6311fc3c8b60c6cb9703d0e89ae1335972cc2d489b40a",
+      "host": "keybase.io",
+      "kid": "01204a66eea3d3f294385496c6311fc3c8b60c6cb9703d0e89ae1335972cc2d489b40a",
+      "uid": "56769c11317aac926b24b8ae9e3c6a19",
+      "username": "freakybobteam"
+    },
+    "merkle_root": {
+      "ctime": 1754516742,
+      "hash": "5f402803a0bb8fffb6c40473e88a606b7f431db2075466e6027b00cf5903a6e8321170d489de9c208cc755e9a2e12c328beb260460a00a64e53b5ac58ae37606",
+      "hash_meta": "651f9e244f21491a95d1b06099b6fe2c7b15fb617f51006d001e0f9b6514b6b7",
+      "seqno": 27002182
+    },
+    "service": {
+      "entropy": "KBC7ZtHj+k5u0+Uw+mBtg/ca",
+      "hostname": "freakybob.site",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.5.1"
+  },
+  "ctime": 1754516751,
+  "expire_in": 504576000,
+  "prev": "b3f9da5187037b8b1cd3d0de278b8a1cff180ba4c609465692aa678c22c5df7f",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgSmbuo9PylDhUlsYxH8PItgxsuXA9DomuEzWXLMLUibQKp3BheWxvYWTESpcCBsQgs/naUYcDe4sc09DeJ4uKHP8YC6TGCUZWkqpnjCLF33/EIGMW7PuPhVPkaOKEiOhUUJLI7YUJrYzNDWoBl0GrWGxiAgHCo3NpZ8RACHJH48cuz5NBXacmJmqQlPfU8LzfVuNRMMQVztq4LTG0fE17aELzc9N+stbe8z/0JzhDjucoF7OhDJTDs3ilAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIE6Nw4zWRNQ1Z4NsvXl68enGysfbf+LfQoUjwOhcIOEZo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/freakybobteam
+
+==================================================================
