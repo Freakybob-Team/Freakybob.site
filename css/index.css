@@ -70,32 +70,6 @@
 
   }
 
-  #container {
-font-family: "Comic Sans MS", sans-serif !important;
-    color: white;
-
-    min-width: 100vw;
-
-    display: none;
-
-    flex-direction: column;
-
-    justify-content: flex-start;
-
-    align-items: center;
-
-    position: relative;
-
-    overflow-x: hidden;
-
-    min-height: 100vh;
-
-  } 
-
-  
-
-  
-
   body::before {
 
     content: '';
