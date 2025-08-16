@@ -9,16 +9,10 @@
     <meta content="https://raw.githubusercontent.com/Freakybob-Team/Freakybob.site/main/images/Freaky_Bob_404.png" property="og:image" />
     <meta content="#006b79" data-react-helmet="true" name="theme-color" />
     <title>404</title>
-    <link rel="stylesheet" href="/css/404.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/twemoji.css">
+    <link rel="stylesheet" href="css/404.css">
 </head>
 <body onload="getRandomImage()">
-    <div id="particles-js"></div>
 <h1>Oops! A 404 Page!</h1>
-<div id="container">
     <p>we'll meet again
         <br>
         dont know where
@@ -29,11 +23,8 @@
         <br>
         just kidding! this page will likely never exist.. or theres an issue.. just let us know idk</p>
     <span id="result" align="center"> </span>
-    <div class="button-container">
     <a href="https://freakybob.site" id="index">Go to main page</a>
     <a href="https://github.com/Freakybob-Team/Freakybob.site/issues/new" id="issue">Make an issue</a>
-</div>
-</div>
     <audio autoplay loop><source src="https://freakybob.site/audio/EEK!.ogg" type="audio/ogg"></audio>
     <script>
         function getRandomImage() {
@@ -53,8 +44,5 @@ var number = Math.floor(Math.random()*randomImage.length);
  return document.getElementById('result').innerHTML = '<img src="' + randomImage[number]+'" />'; 
 } 
     </script>
-<script type="text/javascript" src="/particles.js"></script>
-<script type="text/javascript" src="/app.js"></script>
 </body>
-<script src="/js/twemoji.js"></script>
 </html>

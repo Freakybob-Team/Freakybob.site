@@ -1,51 +1,12 @@
-* {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-
 html, body {
     height: 100%;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    background-color: #ee0c9b;
+    font-family: 'Comic Sans MS', sans-serif;
 }
-
-#container {
-    text-align: center;
-    margin-top: 0px;
-    font-size: 20px;
-    width: 1200px;
-    height: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    border-radius: 7px;
-    background: none;
-    background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
-    border: 1px solid rgba(255,255,2555,0.18);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
-    border-radius: 15px;
-    padding:30px;
-    animation:pop-in 0.5s ease;
-    transition:
-    transform .4s ease,
-    box-shadow .4s ease;
-    animation:pop-in 0.6s ease;
-    color:#ffff;
-}
-
-#particles-js{
-    position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: linear-gradient(135deg, #3c1053, #000000 70%, #150050);
-      }
 
 body {
     flex: 1;
@@ -53,9 +14,11 @@ body {
 }
 
 h1 {
-    color: #fff;
+    color: #333;
     padding: 20px;
+    background-color: #87cefa;
     margin: 0;
+    border-bottom: 4px solid #e71292;
     font-size: 2em;
 }
 
@@ -68,32 +31,20 @@ footer {
     margin-top: auto;
 }
 
-img {
-    margin-bottom: 20px;
-    border-radius: 8px;
-}
-
-
 #issue {
-    background: rgb(205,125,255);
-            background: -moz-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            background: -webkit-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            background: linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cd7dff",endColorstr="#3d0087",GradientType=1);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px 0 rgba(158,0,255,1);
-            border-radius: 8px;
-            color: #ffff;
+    background-color: #ffbb00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
-    margin-top: 200px;
+    margin-top: 20px;
     width: 150px;
     text-decoration: none;
     margin-right: auto;
     margin-left: auto;
     transition: all .4s ease;
-
 }
 
 #issue:hover {
@@ -102,15 +53,10 @@ img {
 }
 
 #index {
-    background: rgb(205,125,255);
-            background: -moz-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            background: -webkit-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            background: linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cd7dff",endColorstr="#3d0087",GradientType=1);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px 0 rgba(158,0,255,1);
-            color: #ffff;
-            border-radius: 8px;
+    background-color: #ffbb00;
+    border: none;
+    border-radius: 5px;
+    color: #333;
     padding: 10px 20px;
     font-size: 1em;
     cursor: pointer;
@@ -136,29 +82,3 @@ img {
         margin-left: -20px;
     }
 }
-
-@keyframes pop-in {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem) scale(1);
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes penis {
-    0% {
-        box-shadow: none;
-  
-    }
-  
-    50%{
-       box-shadow:  0 0px 22px 0 rgba(158,0,255,1);
-    }
-  
-    100% {
-        box-shadow: none;
-    }
-  }
-  

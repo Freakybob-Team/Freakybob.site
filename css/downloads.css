@@ -1,100 +1,45 @@
-* {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
+body {
+    font-family: "Noto Sans", sans-serif;
+    background-color: rgb(1, 83, 121);
 }
-
-#particles-js{
-    position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: linear-gradient(135deg, #3c1053, #000000 70%, #150050);
-      }
-
-
-      #container {
-        text-align: center;
-        margin-top: 100px;
-        font-size: 20px;
-        width: 1200px;
-        height: 400px;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 7px;
-        background: none;
-        background: linear-gradient(135deg, rgba(255,255,255,0.1)rgba(255,255,255,0)) ;
-        border: 1px solid rgba(255,255,2555,0.18);
-        backdrop-filter: blur(10px);
-        box-shadow: 0 8px 32px 0 rgba(0,0,0,37);
-        border-radius: 15px;
-        padding:30px;
-        animation:pop-in 0.5s ease;
-        transition:
-        transform .4s ease,
-        box-shadow .4s ease;
-        animation:pop-in 0.6s ease;
-    }
-
-
-    .button-container {
-        margin-top: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin: 20px;
-    }
-      
     a {
-        
-        margin-top: 10px;
-            display: block;
-            height: 20px;
-            width: 400px;
-            padding: 20px 0px 20px 10px;
-            border-radius: 30px;
-            margin-left: 5px;
-            background: rgb(205,125,255);
-            background: -moz-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            background: -webkit-linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            background: linear-gradient(90deg, rgba(205,125,255,1) 0%, rgba(61,0,135,1) 100%);
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#cd7dff",endColorstr="#3d0087",GradientType=1);
-            backdrop-filter: blur(10px);
-            box-shadow: 0 2px 20px 0 rgba(158,0,255,1);
-            background-size: 300%;
-            background-position: left;
-            text-align: center;
-            font-family: Helvetica;
-            font-size: 22px;
-            color: mintcream;
-            text-decoration: none;
-            transition: background-position 1s ease-in-out;
-            transition: all 1s ease-in-out;
-            position: absolute;
-            animation: penis 2s ease-in-out infinite;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(172, 147, 5);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    max-width: 220px;
+    width: 30%;
+    text-decoration: none;
 }
 h1 {
     text-align: center;
     color: white;
     font-size: 40px;
+    text-shadow: 10px 10px 10px rgba(248, 232, 3, 0.3);
 }
 h3 {
     text-align: center;
     color: white;
     font-size: 25px;
+    text-shadow: 10px 10px 10px rgba(248, 232, 3, 0.3);
 }
 #para1 {
     text-align: center;
     color: white;
     font-size: 20px;
+    text-shadow: 10px 10px 10px rgba(248, 232, 3, 0.3);
 }
 
 #para2 {
     text-align: center;
     color: white;
     font-size: 20px;
+    text-shadow: 10px 10px 10px rgba(248, 232, 3, 0.3);
 }
 
 @media (max-width: 770px) {
@@ -124,29 +69,7 @@ h3 {
     }
   }
 
-
-  @keyframes pop-in {
-    0% {
-      opacity: 0;
-      transform: translateY(-4rem) scale(1);
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  @keyframes penis {
-    0% {
-        box-shadow: none;
-  
-    }
-  
-    50%{
-       box-shadow:  0 0px 22px 0 rgba(158,0,255,1);
-    }
-  
-    100% {
-        box-shadow: none;
-    }
-  }
-  
+.centeredButtonContainer {
+    display: flex;
+    justify-content: center;
+}
