@@ -2,6 +2,7 @@
 Prefer Codeberg or Tangled? We have that too. 
 https://codeberg.org/Freakybob/Freakybob.site 
 https://tangled.sh/@freakybob.site/freakybob.site/
+
 <img src="images/fbanner.png">
 <br>
 [![ForTheBadge uses-js](http://ForTheBadge.com/images/badges/uses-js.svg)](http://ForTheBadge.com)
