@@ -1,5 +1,5 @@
 
-var countDownDate = new Date("August 19, 2025, 12:00 Pm").getTime();
+var countDownDate = new Date("August 19, 2026, 12:00 Pm").getTime();
 
 function initTime() {
     var now = new Date().getTime();
