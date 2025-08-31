@@ -6,7 +6,7 @@ const oldui = document.getElementById("oldcontainer");
 
 const buttont = document.getElementById("old");
 
-const ks = new Audio('../audio/movement-200697.mp3');
+//const ks = new Audio('../audio/movement-200697.mp3');
 
 let isold = JSON.parse(localStorage.getItem("isold"));
 
@@ -113,11 +113,11 @@ document.addEventListener('click', () => {
 
 })
 
-function popupc() {
-  popupl.classList.add('gone');
-
-  setTimeout(() => popupl.style.display = 'none', 480);
-  poupis = true;
-  localStorage.setItem("cacheWarn", popupis);
-document.body.style.overflowY = 'scroll';
-}
+//function popupc() {
+//  popupl.classList.add('gone');
+//
+//  setTimeout(() => popupl.style.display = 'none', 480);
+//  poupis = true;
+//  localStorage.setItem("cacheWarn", popupis);
+//document.body.style.overflowY = 'scroll';
+//}
