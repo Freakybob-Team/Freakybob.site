@@ -1,7 +1,5 @@
 const newui = document.getElementById("container");
 
-const popupl = document.getElementById("popup");
-
 const oldui = document.getElementById("oldcontainer");
 
 const buttont = document.getElementById("old");
@@ -11,19 +9,6 @@ const buttont = document.getElementById("old");
 let isold = JSON.parse(localStorage.getItem("isold"));
 
 document.body.style.overflow = 'hidden';
-
-//let popupis = localStorage.getItem("cacheWarn");
-
-//if (popupis) {
-//  popupl.style.display = 'none';
-//  document.body.style.overflowY = 'scroll';
-//}
-//
-//else {
-//  popup.style.display  = 'flex';
-//}
-
-
 
 if (isold) {
 
@@ -99,7 +84,7 @@ localStorage.setItem("isold", JSON.stringify(isold));
 
 }
 
-ks.loop = true;
+//ks.loop = true;
 
 let userInteraction = 0;
 
@@ -109,15 +94,6 @@ document.addEventListener('click', () => {
 
   userInteraction++;
 
-  ks.play();
+  //ks.play();
 
 })
-
-//function popupc() {
-//  popupl.classList.add('gone');
-//
-//  setTimeout(() => popupl.style.display = 'none', 480);
-//  poupis = true;
-//  localStorage.setItem("cacheWarn", popupis);
-//document.body.style.overflowY = 'scroll';
-//}
