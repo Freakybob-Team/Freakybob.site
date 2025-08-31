@@ -12,16 +12,16 @@ let isold = JSON.parse(localStorage.getItem("isold"));
 
 document.body.style.overflow = 'hidden';
 
-let popupis = localStorage.getItem("cacheWarn");
+//let popupis = localStorage.getItem("cacheWarn");
 
-if (popupis) {
-  popupl.style.display = 'none';
-  document.body.style.overflowY = 'scroll';
-}
-
-else {
-  popup.style.display  = 'flex';
-}
+//if (popupis) {
+//  popupl.style.display = 'none';
+//  document.body.style.overflowY = 'scroll';
+//}
+//
+//else {
+//  popup.style.display  = 'flex';
+//}
 
 
 
