@@ -20,7 +20,7 @@ document.body.style.overflow = 'hidden';
 //}
 //
 //else {
-//  popup.style.display  = 'flex';
+//  popupl.style.display  = 'flex';
 //}
 
 
