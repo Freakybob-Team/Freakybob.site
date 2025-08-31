@@ -12,5 +12,5 @@ jobs:
     - uses: actions/first-interaction@v1
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
-        issue-message: "Welcome! Thanks for reporting an issue. We'll be right there! @Wish13yt @5quirre1 @nameswastaken"
-        pr-message: "Welcome! We're glad you want to contribute. We'll be right there! @Wish13yt @5quirre1 @nameswastaken"
+        issue-message: "Welcome! Thanks for reporting an issue. We'll be right there!"
+        pr-message: "Welcome! We're glad you want to contribute. We'll be right there!"
