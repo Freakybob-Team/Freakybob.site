@@ -2,7 +2,6 @@
   font-family: "Nata Sans", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
-  font-family: "Noto Color Emoji", sans-serif;
   }
 
 
@@ -34,9 +33,7 @@
     align-items: center;
 
     position: relative;
-
-    overflow-x: hidden;
-
+    
     min-height: 100vh;
 
   }
