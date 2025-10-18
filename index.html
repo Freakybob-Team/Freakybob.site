@@ -1,435 +1,122 @@
 <!--
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠟⠛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⣿⣿⣿⣿⡿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⢿⡆⣿⣿⣿⡿⠿⣿⣿⠿⠿⣿⣿⣿⠿⠿⣿⣿⣷⢸⣿⡿⠿⣿⢶⡿⢿⣿⣿⣿⡿⠿⣿⣿⣇⢾⠿⣿⣿⣿⣿⣿⢿⣿⢿⣿⣿⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠈⡁⣻⣿⣿⣶⢈⣴⣄⣹⢣⣾⣶⡌⣿⡇⣰⣷⠘⣿⣿⢸⠇⣴⣶⣿⡃⣴⣦⡌⣿⢋⣴⣶⡌⢻⣟⢠⣶⣦⢹⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣽⣿⣿⣿⢸⣿⣿⣿⠠⣶⣶⣶⣿⢋⣽⣶⠐⣿⣿⢠⣎⢻⣿⣿⡵⣿⣿⡗⣿⠘⣿⣿⡗⢸⡯⢼⣿⣿⢀⣿⣿⣯⣿⣾⢿⣾⡿⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣥⣤⣽⣿⣿⣿⣉⣬⣽⣿⣿⣷⣬⣩⣤⣿⣦⣭⣥⣤⡽⣅⣬⣿⣀⣈⣿⣦⣌⣥⣴⣿⣷⣌⣉⣤⣿⣿⣤⣉⣤⣾⣿⣿⣯⣷⣿⣿⣻⣿⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣛⢛⡻⡟⡛⡇⣛⢻⢺⢸⢟⡻⣿⣿⣿⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣽⣿⣽⣾⣟⣿⣷⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣻⣸⣧⣟⢏⣇⢟⣹⣸⣸⣘⢶⣿⣿⣿⣽⣿⢿⣽⡿⣯⣿⣯⣿⢿⣽⣾⣿⢿⣾⣿⣽⡿⣟⣾⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣿⣿⣷⣿⣟⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣾⣿⣾⣿⢿⣿⢿⣷⢿⣻⡿⣟⣯⣿⣿⢿⣯⣿⢿⡿⣿⣯⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⡿⣿⢯⡿⣿⣿⣿⢿⠿⢿⡿⣿⢿⣿⣿⡿⢿⡿⣿⣿⠿⡿⢿⣿⣿⣯⣿⡷⣿⣿⣿⣿⠿⣿⡿⢿⠿⡿⢿⡽⢿⠿⣿⢯⢿⠿⣯⣿⣿
-
 ⡟⠘⠓⠘⠃⠻⣧⠛⠈⠃⢐⣦⣇⠙⠊⠁⠀⠒⣹⡾⠋⠁⠀⠀⠀⠀⠀⠀⠀⠉⠛⠿⣍⠈⠑⠚⠐⣻⡾⠛⠉⠁⠀⠀⠀⠀⠈⠙⠻⢶⡔⠋⠀⠐⠀⠀⠀⠀⠀⠀⠀⠉⠜⡾⢹
-
 ⡇⠀⠀⠀⠀⠀⣿⠀⠀⢠⣿⣯⡇⠀⠀⠀⣊⣼⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢧⡀⢀⡾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢷⡀⠀⠀⠀⠀⠀⠀⠀⠀⢠⠞⠁⢸
-
 ⡇⠀⠀⠀⠀⢀⣿⠄⠀⠈⠟⠉⠀⠀⠀⠐⣾⠃⠀⠀⠀⠀⠀⠀⠀⠔⣠⣾⠿⢷⣦⡀⠀⠈⢿⡾⠁⠀⠀⣠⣤⣶⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⢻⡄⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⣸⡏⠀⠀⠀⠀⠀⠀⠀⠀⠀⡏⠀⠀⠀⠀⠀⠀⠀⠀⣾⡟⣤⣿⣶⡘⢿⡆⠀⢸⠃⠀⠀⣾⡏⣔⣶⣌⠽⣷⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠹⡄⠀⢸
-
 ⡇⠀⠀⠀⡄⣸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⢿⣏⠼⢿⡿⢡⣿⠇⠀⢻⡃⠀⠀⣿⡔⢻⣿⣿⢂⣿⡁⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⡇⠀⢸
-
 ⡇⠀⠀⠀⠀⠙⣷⡄⠀⠀⠀⣠⡶⠾⠛⣿⡿⣆⠀⠀⠀⠀⠀⠀⠀⠈⠻⣷⣮⣴⡿⠛⠀⣰⠞⠓⠶⣄⠹⣷⣵⣊⣤⣿⠟⠀⠀⠀⠀⠀⠀⠀⢀⣿⣀⣀⣀⠀⠀⠀⢀⣼⠃⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠈⢻⠀⠀⣰⣿⡶⠠⠶⠆⠀⢼⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠀⠀⠀⢸⡃⠀⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⢀⡾⠋⠳⠆⠉⠉⠳⣄⠀⠼⠁⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⣼⢢⠈⡘⣧⡀⠀⡾⢿⡁⠘⠻⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⢷⠀⠀⠀⣼⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣧⠀⢀⣝⡛⠀⠛⣻⡇⢸⡀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⢰⡏⠁⠡⠀⠈⠇⠀⠀⢈⢷⡀⠀⠌⠛⠶⣄⣀⣀⠀⢀⣀⣀⣠⠶⠛⠁⠈⠁⢀⡼⠉⠳⢤⣀⠀⠀⠀⠀⠀⠀⢀⣠⡴⠟⠁⠀⣨⠏⠉⠀⣰⠟⠀⠈⡇⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⣿⠃⠀⠀⠀⠀⠀⠀⠀⠈⠈⢿⣄⠀⠀⠐⠈⠉⠉⠙⠉⠉⠉⠀⠀⠀⠀⠀⠀⠋⠀⠀⠀⠀⠉⠛⠲⠶⠶⠖⠚⠋⠉⠀⠀⢀⡴⠋⠀⠀⠈⠉⠀⠀⠀⡇⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠹⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⠷⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⠾⠋⠀⠀⠀⠀⠀⠀⠀⠀⢠⡇⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠙⢷⡄⠀⠀⠀⠀⠀⠀⣠⠀⠀⠀⠈⠙⠷⣦⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⡴⠞⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡞⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⠀⠀⠀⢀⡿⣫⠆⠀⠀⠀⠈⠀⠀⠈⠙⠛⠒⢶⠦⢤⣤⣤⣤⣤⣤⣤⡤⠤⠶⠶⣾⠛⠋⠉⠁⠀⠀⠀⠀⠀⡴⡖⣲⡄⠀⠀⠀⠀⡞⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⢸⠇⠀⠀⠀⠀⠸⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⠀⠀⠀⠀⢸⠄⠀⡹⠀⠀⠀⠀⢹⡄⠀⠀⠀⠀⠀⠀⠀⣾⠁⠀⢤⠁⠀⠀⠀⠀⢷⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⢸⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠲⠶⠴⢤⠾⠀⠀⠻⠤⠴⠶⠶⠞⠁⠀⠀⠀⠀⠀⠀⢰⠇⠀⣠⠗⠀⠀⠀⠀⠀⣻⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠈⢷⡠⠀⠀⠀⠀⠀⠀⢠⢜⢞⡱⠀⠀⠀⠀⠀⠀⠠⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠦⠆⠋⠀⠀⠀⠀⠀⣠⠏⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⣸⢷⡔⠀⠀⠀⠀⢀⣞⡼⡖⡟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⡾⡇⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⡿⠀⢹⡆⠀⠀⠀⣼⢮⣱⠟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡶⡄⠀⠀⠀⢸⠀⢻⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⢀⡏⠀⡾⡀⠀⠀⠀⠙⠷⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⣠⠇⠀⠀⠀⢸⡆⢸⡇⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⡇⠘⣷⠀⠀⠀⠀⠐⣤⣤⡤⣤⣤⠀⠀⠀⠀⠀⢰⡤⠤⣤⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⠒⠊⠀⠀⠀⠀⠀⡇⠀⡇⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠘⡇⠀⠙⢷⡶⠶⠞⠛⠉⠉⠁⠉⠙⠳⠶⠶⠶⣿⡛⠁⠀⠉⠉⠛⢳⣤⣤⣤⡴⠛⠛⠛⠛⠶⣦⣤⣤⣤⡴⠶⠖⠛⠛⠳⠶⣤⣤⡴⠃⢠⡇⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠈⠛⢷⡶⢾⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⠶⣤⣀⣠⡴⢿⣍⣚⣽⠳⣄⣀⣤⠴⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠤⡴⠞⠃⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣧⠀⣯⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠁⠀⣸⡟⡻⣇⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠀⡇⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⢸⡟⠻⢟⣛⣛⣛⣛⣛⡛⢟⢛⣛⣛⣛⣛⣛⣛⡛⢛⡿⣜⣱⢻⣟⢛⣛⣛⣛⣛⣛⡻⠛⠛⢛⠛⠛⡛⢛⣳⠞⢻⡇⠀⡇⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠸⣧⡂⢽⣿⣿⣿⣿⣿⡆⠂⠩⣿⠿⣿⢿⣿⣿⡇⣾⡳⣭⣒⣏⣿⡼⣿⣿⣿⡿⣿⡇⢠⢸⣿⣿⣿⣿⣿⣿⢠⢺⡇⢸⠄⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⠀⣿⡁⡤⡀⠄⡀⢀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠧⡉⣷⣭⣻⡿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡎⣿⠁⣼⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡆⢹⣇⣇⣰⠠⢁⠂⣌⣡⣌⠀⠠⠀⠀⠀⢀⠄⠑⠉⡀⡟⢛⢨⢠⣀⣄⣀⠀⠀⠀⢀⠀⠠⣐⡠⡂⡬⢔⣥⣿⡏⠀⡇⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡷⠀⢩⡛⢿⠛⠛⠛⠓⠻⣾⢷⠶⡶⠾⠭⣴⣶⠮⠶⠿⠾⠷⠾⠶⠾⠻⡿⠛⢟⡛⢛⢻⡛⣿⠛⠛⠋⢛⡿⠋⠁⠸⡇⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠓⠀⢀⡧⢺⠆⠀⠀⠀⠸⢿⣦⣄⣦⣤⣧⣶⠿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠛⢿⣶⢽⣾⡷⠾⠛⠀⠀⠀⢾⢰⡏⠀⠘⣧⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⠰⣆⠈⢷⣼⠀⠀⠀⠀⠀⠀⠀⠈⣿⠌⠹⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠃⢠⠇⠀⠀⠀⠀⠀⠀⢸⣬⡟⠀⣠⠸⡆⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⠀⢿⡀⣸⡟⢧⡄⠀⠀⠀⠀⠀⠀⢸⡇⠀⢷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡏⠀⣸⠀⠀⠀⠀⠀⠀⢀⡼⢿⠀⢠⡟⠀⡇⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⣆⠈⠛⣯⡙⣷⠟⠀⠀⠀⠀⠀⠀⠀⣿⣀⣼⡅⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣷⣤⡟⠀⠀⠀⠀⠀⠀⣿⣴⠋⣳⠏⠁⣸⠃⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢷⣦⣀⣿⣼⠀⠀⠀⠀⠀⠀⠀⠀⢻⣽⣻⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣳⣺⡇⠀⠀⠀⠀⠀⠀⢹⡇⡟⠁⣠⡼⠃⠀⠀⠀⠀⠐⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣍⣉⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣷⣤⣴⡇⠀⠀⠀⠀⠀⠀⠀⠙⠙⠛⠉⠀⢀⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⠉⠉⣻⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠈⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡔⠈⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣤⣤⣤⣀⢀⣴⣟⠀⠀⣿⡄⠀⠀⠀⠀⠀⠀⠀⣴⣇⠀⣠⣿⣦⣀⣤⣶⣶⣶⣶⣄⠀⠀⠘⠁⢀⠀⠀⠀⠀⠀⠀⠀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⡇⠀⡇⠀⠀⠐⡈⠈⣐⢲⣄⣀⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⠀⠀⠀⠀⠀⠀⠀⢈⣿⣿⣿⣷⣿⣿⣾⢿⣿⣿⣿⣿⠇⠀⠘⠄⢀⠀⠍⢁⠀⠀⠀⠑⢸
-
 ⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠛⠿⠿⠿⠿⠟⠛⠛⠹⠟⠋⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠀⠉⠙⠛⠛⠛⠛⠋⠁⠀⠀⠀⠈⢁⢀⠀⠄⠁⠀⠀⠀⢸
-
 ⣿⣿⣿⣟⣿⣻⣟⣿⣻⣟⣿⣻⢿⣛⡿⣛⡯⣟⣻⢏⣟⢯⣛⣞⡾⣙⣳⣋⢷⣋⣟⣹⣋⣟⣹⣋⣟⡹⣋⢞⡹⣣⢛⡞⢳⣙⡚⢧⡛⣎⢳⡛⣼⢩⣛⡛⣿⣦⡁⠀⠀⠀⠀⠀⢸
-
 ⣿⣿⣾⣽⣞⡿⣞⣷⣻⣞⡷⣯⢿⣽⣳⢯⣟⣞⣳⣟⣮⣟⣮⢷⣹⢧⡷⣹⢮⡗⣮⢳⡝⣮⢳⡝⣮⢳⡝⣮⢳⣭⢻⣜⡳⢮⡝⣶⡹⣬⢳⢞⢦⢏⡶⣹⠷⡿⣧⡄⠀⠀⢀⡀⢸
-
 ⣿⣿⣾⣟⣿⣿⣿⣽⣷⣿⣽⣟⣿⢾⣽⣻⢾⣽⣳⣟⡾⣞⡷⣯⣟⡾⣽⢯⣷⣻⣳⢯⡿⣼⢯⣞⢷⣫⣞⣷⣫⣞⡷⣮⢽⣣⡟⡶⣝⣮⣛⣮⣛⡮⢷⣭⢻⡵⣫⢿⣷⣾⢿⡿⣿
-
 ⣿⣿⣿⣿⣿⣿⡿⢿⠿⡿⢿⢿⠿⡿⢿⠿⡿⢿⠿⠿⠿⠿⠿⠿⠿⢿⠿⢿⠾⠿⣷⣿⣿⡽⣟⣾⣿⠷⠿⠾⠷⠿⠻⠟⠿⠷⠟⠿⠻⠾⠿⠾⠟⠿⠻⠾⠟⠿⠿⠿⠿⢾⣿⣿⣽
-
 ⣿⣿⣿⣿⣿⣿⣼⢧⣿⣜⣷⣺⢧⣳⣏⣷⡵⣧⣾⡹⣜⣧⣯⢷⣙⢦⣛⡴⣍⣳⣱⢻⣿⣿⣿⣿⡏⠀⣀⣤⡠⣤⣤⣔⣶⣰⣂⣤⣠⣤⣤⣀⣤⣀⣄⣀⣀⣀⣀⣠⡀⠀⢿⣷⣿
-
 ⣿⣿⣿⣿⣿⣿⣽⣿⣿⣿⠿⠿⠿⣿⣽⣿⣿⢿⣷⣿⣽⣶⣿⣟⣯⣿⣞⣷⡽⣶⢯⣿⣿⣿⣿⣿⣇⡨⡙⠀⠑⣜⣷⣿⣿⣿⣿⣿⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡃⣸⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⠉⠀⣤⣶⣶⠀⠈⣿⡇⣶⡎⢟⢝⣏⣭⡇⣿⢉⡝⠟⣝⣿⣿⣿⣿⣿⣿⣿⡟⢱⡽⡄⠸⣍⢻⣿⡿⣟⣿⢠⢹⢉⠩⡛⢽⡑⡉⠋⠋⣙⢉⣽⡷⠧⣼⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣶⣶⣿⣿⣿⣿⣦⣿⣷⣾⣾⣿⢿⣷⣵⣧⣷⣾⣷⣷⣷⣿⣟⣿⣿⣿⣿⣿⠿⣜⣿⡟⣆⠘⠛⠉⢻⡿⣦⣞⢢⣸⣖⠮⣰⣇⡴⣼⣊⣽⡼⣶⣿⢯⣹⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣟⣯⣿⣻⣯⣿⢾⣯⢿⡽⣯⢿⡽⣯⣟⡾⣽⢯⣟⣾⣳⣟⣾⣳⢯⣿⣿⣿⣿⣿⣏⢵⣿⣿⣧⡗⠦⣠⢮⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠗⣺⣿⣿
-
 ⣿⣿⣿⣿⣿⣿⣿⣿⣷⣿⣽⣾⣿⣾⣿⣿⣽⣯⣿⣷⣿⣿⣽⣿⣾⣷⣿⣾⣷⣿⣿⣿⣿⣿⣿⣿⣿⣤⣤⣥⣤⣭⣬⣤⣭⣤⣭⣥⣬⣥⣬⣥⣥⣬⣥⣥⣥⣬⣤⣤⣴⣾⣿⣿⣿
 
 "Freaks rule the world, and you are a freak." - Albert Einstein
-
 -->
 
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
-
-    <title>Freakybob.site; a place for fun and memes :)</title>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta name="description" content="A place for fun, memes, FreakyBob, and actual software sometimes!">
-
-    <meta content="Freakybob.site; a place for fun and memes :)" property="og:title" />
-
-    <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
-
-    <meta content="A place for fun, memes, FreakyBob, and actual software sometimes!" property="og:description"/>
-
-    <meta content="https://freakybob.site" property="og:url" />
-
-    <meta content="images/image.png" property="og:image" />
-
-    <link rel="canonical" href="https://www.freakybob.site/index" />
-
-    <meta content="#006b79" data-react-helmet="true" name="theme-color" />
-
-    <link rel="icon" type="image/x-icon" href="images/FreakybobDOTsite.png">
-
-    <link rel="stylesheet" href="css/index.css">
-
-    <link rel="manifest" href="/manifest.json">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
-
-    <style>
-        * {
-            color: white;
-        }
-    .button {
-
-        margin-top: 12px;
-
-        padding: 15px 25px;
-
-        font-size: 18px;
-
-        cursor: pointer;
-
-        background-color: rgb(172, 147, 5);
-
-        color: white;
-
-        border: none;
-
-        border-radius: 8px;
-
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-
-        transition: all 0.3s ease;
-
-        max-width: 220px;
-
-        width: 100%;
-
-    }
-
-    button:hover {
-
-        background-color: rgb(218, 203, 3);
-
-        transform: translateY(-3px) scale(1.05);
-
-    }</style>
-</head>
-
-<body>
-    <script src="https://js-de.sentry-cdn.com/de5b3fb954f5882c8f890c906eb39cf1.min.js"crossorigin="anonymous"></script>
-    <a href="mailto:freakybobsite@proton.me" rel="me" style="display: none;">freakybobsite@proton.me</a>
-    <a href="https://github.com/freakybob-team" rel="me" style="display: none;">github.com/freakybob-team</a>
-    <a rel="me" href="https://mas.to/@freakybobteam" style="display: none;">Mastodon</a>
-            <noscript>
-
+    <head>
+        <title>Freakybob.site; a place for fun and memes :)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A place for fun, memes, FreakyBob, and actual software sometimes!">
+        <meta content="Freakybob.site; a place for fun and memes :)" property="og:title" />
+        <meta name="googlebot-news" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        <meta content="A place for fun, memes, FreakyBob, and actual software sometimes!" property="og:description"/>
+        <meta content="https://freakybob.site" property="og:url" />
+        <meta content="images/image.png" property="og:image" />
+        <link rel="canonical" href="https://www.freakybob.site/index" />
+        <meta content="#006b79" data-react-helmet="true" name="theme-color" />
+        <link rel="icon" type="image/x-icon" href="images/FreakybobDOTsite.png">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nata+Sans:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <script src="https://js-de.sentry-cdn.com/de5b3fb954f5882c8f890c906eb39cf1.min.js"crossorigin="anonymous"></script>
+        <a href="mailto:freakybobsite@proton.me" rel="me" style="display: none;">freakybobsite@proton.me</a>
+        <a href="https://github.com/freakybob-team" rel="me" style="display: none;">github.com/freakybob-team</a>
+        <a rel="me" href="https://mas.to/@freakybobteam" style="display: none;">Mastodon</a>
+        <noscript>
             <link rel="stylesheet" href="css/js-disabled.css">
-
             <a>To continue to the website, please enable JavaScript.</a>
-
         </noscript>
-
-        <h1 style="text-align: center;
-
-        color: rgb(218, 203, 3);
-
-        font-size: 42px;
-
-        margin-top: 30px;
-
-        font-weight: 900;
-
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">Freakybob.site, the home of Freakybob Team</h1>
+        <h1 style="text-align: center; color: rgb(218, 203, 3); font-size: 42px; margin-top: 30px; font-weight: 900; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);">Freakybob.site, the home of Freakybob Team</h1>
         <div class="alert alert-primary" role="alert">
-                <a href="https://freakybob-team.github.io/endcensorship/">We want a free web. Learn how you can fight with us.</a>
+            <a href="https://freakybob-team.github.io/endcensorship/">We want a free web. Learn how you can fight with us.</a>
         </div>
         <h2>
-
-            <marquee style="text-align: center;
-
-            color: yellow;
-
-            font-family: 'Comic Sans MS', sans-serif;
-
-            font-weight: 900;
-
-            ">The old theme has been removed! RIP.</marquee>
-
+            <marquee style="text-align: center; color: yellow; font-family: 'Comic Sans MS', sans-serif; font-weight: 900;">The old theme has been removed! RIP.</marquee>
         </h2>
-
         <a href="https://freakybob.site/info"><button class="button">Check out the info page!</button></a>
-
         <a href="dev.html"><button class="button">Check out the people who made this possible!</button></a>
-
         <a href="https://freakybob-team.github.io/image-gallery/"><button class="button">Check out the image gallery!</button></a>
-
-        <a href="https://squidwardcc.org"><button class="button">(Partner) Squidward Community
-
-            College</button></a>
-
-    <a href="https://freakybob.site/activities"><button class="button">More
-
-            activities!</button></a>
+        <a href="https://squidwardcc.org"><button class="button">(Partner) Squidward Community College</button></a>
+        <a href="https://freakybob.site/activities"><button class="button">More activities!</button></a>
 
         <!-- FC2 Clap tag starts here -->
-<a href="//clap.fc2.com/post/freakybobteam/?url=https%3A%2F%2Ffreakybob.site&title=Freakybob.site" target="_blank" title="Web Clap by FC2"><img src="//clap.fc2.com/images/button/orange/freakybobteam?url=https%3A%2F%2Ffreakybob.site&amp;lang=en" alt="Web Clap by FC2" style="border:none;" /></a>
-<!-- FC2 Clap tag ends here -->
- <footer>
-    <p>2024-2025 Freakybob Team. Licensed under GPL-3.0.</p>
-    <img src="https://app.greenweb.org/api/v3/greencheckimage/freakybob.site?nocache=true" alt="This website runs on green hosting - verified by thegreenwebfoundation.org" width="200px" height="95px">
-</footer>
-<!--
-<style>
-    @keyframes fade-in {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-out {
-    0% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
-    #sad.gone {
-  animation: fade-out .5s ease-in-out;
-}
+        <a href="//clap.fc2.com/post/freakybobteam/?url=https%3A%2F%2Ffreakybob.site&title=Freakybob.site" target="_blank" title="Web Clap by FC2"><img src="//clap.fc2.com/images/button/orange/freakybobteam?url=https%3A%2F%2Ffreakybob.site&amp;lang=en" alt="Web Clap by FC2" style="border:none;" /></a>
+        <!-- FC2 Clap tag ends here -->
 
-@media screen and (max-width: 786px) {
-    html, body {
-        overflow-x: hidden;
-        overflow-y: hidden;
-    }
-
-
-    #sad {
-        font-family: "Comic Sans MS", sans-serif !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(48, 47, 92, 0.748);
-        backdrop-filter: blur(9px);
-        z-index: 1001;
-        animation: fade-in 0.5s ease-in-out;
-    }
-
-    #sadc h1 {
-        font-size: 1.5rem;
-    }
-
-    #sadc p {
-        font-size: 1rem;
-    }
-
-    #gift-message {
-        display: none;
-    }
-
-    #sadc {
-        border: 1px solid rgba(68, 70, 212, 0.807);
-        backdrop-filter: blur(9px);
-        padding: 20px;
-        background: linear-gradient(135deg, rgba(145, 87, 39, 0.3), rgba(171, 73, 184, 0.1)), rgba(49, 2, 102, 0.1);
-        border-radius: 8px;
-        text-align: center;
-        width: 70%;
-        transition: .3s;
-        animation: pop-in 1s ease-in-out;
-    }
-
-
-    #gift-message.show {
-        display: block;
-    }
-}
-
-    
-</style>
-
-<script>
-window.onload = function() {
-
-    const popupSeen = getCookie("popupSeen");
-
-    if (popupSeen) {
-        document.getElementById("sad").style.display = "none";
-        return;
-    }
-    
-
-    document.getElementById("sad").style.display = "flex";
-    
-    let revealButton = document.getElementById("reveal-gift");
-    let giftImage = document.getElementById("gift-image");
-    let content = document.querySelectorAll('#sadc h1, #sadc p, #reveal-gift, #ok');
-    let giftMessage = document.getElementById("gift-message");
-    giftMessage.style.display = 'none';
-
-    document.addEventListener("click", function(event) {
-        if (event.target && event.target.id === "downloadable-image") {
-            const link = document.createElement('a');
-            link.href = event.target.src;
-            link.download = 'thankU!!!.png';
-            link.click();
-        }
-    });
-
-    document.getElementById("ok").addEventListener("click", function() {
-        const sadElement = document.getElementById("sad");
-
-
-        setCookie("popupSeen", "true", 12); 
-
-        sadElement.classList.add("gone");
-
-        setTimeout(function() {
-            sadElement.style.display = "none";
-        }, 500); 
-    });
-
-    sad.addEventListener("click", (e) => {
-        if (e.target === sad) {
-            sad.classList.add("gone");
-
-            setTimeout(function() {
-                sad.style.display = "none";
-            }, 500);
-        }
-    });
-};
-
-
-function setCookie(name, value, days) {
-    let expires = "";
-    if (days) {
-        const date = new Date();
-        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-        expires = "; expires=" + date.toUTCString();
-    }
-    document.cookie = name + "=" + (value || "") + expires + "; path=/";
-}
-
-
-function getCookie(name) {
-    const nameEQ = name + "=";
-    const ca = document.cookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-        let c = ca[i].trim();
-        if (c.indexOf(nameEQ) === 0) {
-            return c.substring(nameEQ.length, c.length);
-        }
-    }
-    return null;
-}
-
-
-</script>
--->
-</body>
-
-<script src="js/index.js"></script>
-
-<script src="js/sentry.js"></script>
-
+        <footer>
+            <p>2024-2025 Freakybob Team. Licensed under GPL-3.0.</p>
+            <img src="https://app.greenweb.org/api/v3/greencheckimage/freakybob.site?nocache=true" alt="This website runs on green hosting - verified by thegreenwebfoundation.org" width="200px" height="95px">
+        </footer>
+    </body>
+    <script src="js/index.js"></script>
+    <script src="js/sentry.js"></script>
 </html>

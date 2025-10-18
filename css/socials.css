@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://preview.redd.it/9hkhjyk7wl181.jpg?width=640&crop=smart&auto=webp&s=24a57158592b245671e13b46860b4901eb2cc314);
+    background-image: url('/images/Socialsbackground.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -56,6 +56,7 @@ h1 {
 #social-buttons-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 20px;
     margin-top: -10px;
@@ -67,7 +68,6 @@ h1 {
 }
 
 #social-buttons-container img {
-    width: 40px;
     height: 40px;
     transition: 0.3s;
 }
@@ -75,26 +75,17 @@ h1 {
 #social-buttons-container img:hover {
     transform: scale(1.1);
 }
+
 @media screen and (max-width: 600px) {
     #home-button-container button {
-    font-size: 15px;
+        font-size: 15px;
     }
+
     #para1, #para2 {
-    font-size: 15px;
+        font-size: 15px;
     }
+
     #social-buttons-container img {
-    width: 30px;
-    height: 30px;
+        height: 30px;
     }
-    #discord-button img {
-    width: 60px;
-    height: 40px;
-    }
-    #pikidiary-button img {
-    width: 50px;
-    height: 30px;
-    }
-    
 }
-
-
